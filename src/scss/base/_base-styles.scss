@@ -28,15 +28,12 @@ img{
     display: block;
     width: 100%;
 }
-
 body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: var(--primary-text-color);
-    background-color: var(--primary-background-color);
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    color: $secondaryTextColor;
+    font-family: 'DM Sans', sans-serif;
 }
 .container{
     max-width: 480px;
