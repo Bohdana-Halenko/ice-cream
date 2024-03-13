@@ -55,6 +55,16 @@ body {
     max-width: 1200px;
   }
 }
+.card {
+  width: 330px;
+  height: 572px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .footer {
   padding-top: 113px;
 }
