@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+src/sass/main.css
+src/sass/main.css.map
+*.css

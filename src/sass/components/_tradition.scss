@@ -1,0 +1,99 @@
+.tradition {
+  padding-top: 125px;
+  padding-bottom: 125px;
+  background-color: #fff5f6;
+  background-image: url(./img/tradition/background@1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url("./img/tradition/background@2x.png");
+
+}
+  &__subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffa5ba;
+    padding-bottom: 15px;
+  }
+  &__title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $hoverColor;
+    padding-bottom: 26px;
+  }
+  &__image {
+    width: 280px;
+    height: 279px;
+    margin-bottom: 46px;
+  }
+  &__first-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: $primaryTextColor;
+    padding-bottom: 35px;
+    text-align: left;
+  }
+  &__second-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: $textColor;
+    text-align: left;
+  }
+  &__third-text {
+    padding-top: 15px;
+  }
+  &__btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+  }
+  &__btn {
+    background-color: $secondaryTextColor;
+    border: none;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: $hoverColor;
+    padding: 15px 37px;
+    width: 176px;
+    height: 44px;
+  }
+&__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+&__icon-wrap{
+    width: 33px;
+height: 50px;
+margin-top: 38px;
+}
+&__number{
+    font-family: 'DM Sans', sans-serif;
+font-weight: 400;
+font-size: 36px;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: $hoverColor;
+padding-top: 16px;
+}
+&__describe{
+    padding-top: 20px;
+    font-weight: 700;
+font-size: 12px;
+line-height: 170%;
+color: $primaryTextColor;
+}
+}
