@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 src/sass/main.css
 src/sass/main.css.map
+*.css
