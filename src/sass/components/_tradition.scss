@@ -90,11 +90,17 @@
     height: 44px;
     cursor: pointer;
      transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-    &:hover{
-      background-color: $hoverColor;
-      color: $secondaryTextColor;
     }
-  }
+    &__btn-wrap:hover{
+      .tradition__btn{
+        background-color: $hoverColor;
+        color: $secondaryTextColor;
+      }
+      .tradition__arrow{
+        fill: $secondaryTextColor;
+      }
+    }
+  
   &__list {
     display: flex;
     flex-direction: column;
