@@ -2,26 +2,28 @@
   padding-top: 125px;
   padding-bottom: 125px;
   background-color: #fff5f6;
-  background-image: url(./img/tradition/background@1x.png);
+  background-image: url(../img/tradition/background@1x.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url("./img/tradition/background@2x.png");
-
-}
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../img/tradition/background@2x.png');
+  }
   &__subtitle {
-    font-family: 'DM Sans', sans-serif;
+    font-family: "Titan One", sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
     color: #ffa5ba;
     padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
   }
   &__title {
-    font-family: 'DM Sans', sans-serif;
+    font-family: "Titan One", sans-serif;
     font-weight: 400;
     font-size: 34px;
     letter-spacing: 0.04em;
@@ -30,10 +32,19 @@
     color: $hoverColor;
     padding-bottom: 26px;
   }
+  &__wrap{
+    margin: 0 auto;
+  }
   &__image {
     width: 280px;
     height: 279px;
     margin-bottom: 46px;
+  }
+  &__text-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   &__first-text {
     font-weight: 500;
@@ -42,16 +53,24 @@
     color: $primaryTextColor;
     padding-bottom: 35px;
     text-align: left;
+    max-width: 220px;
   }
   &__second-text {
     font-weight: 500;
     font-size: 12px;
     line-height: 162%;
     color: $textColor;
-    text-align: left;
+     text-align: left;
+    max-width: 220px;
+    padding-bottom: 15px;
   }
   &__third-text {
-    padding-top: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    color: $textColor;
+    text-align: left;
+    max-width: 220px;
   }
   &__btn-wrap {
     display: flex;
@@ -69,32 +88,143 @@
     padding: 15px 37px;
     width: 176px;
     height: 44px;
+    cursor: pointer;
+     transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    &:hover{
+      background-color: $hoverColor;
+      color: $secondaryTextColor;
+    }
   }
-&__list{
+  &__list {
     display: flex;
     flex-direction: column;
     justify-content: start;
-}
-&__icon-wrap{
+  }
+  &__icon-one {
     width: 33px;
+    height: 50px;
+    margin-top: 38px;
+  }
+  &__icon-two{
+    width: 50px;
+    height: 50px;
+    margin-top: 38px;
+  }
+  &__icon-three{
+    width: 44px;
 height: 50px;
 margin-top: 38px;
-}
-&__number{
-    font-family: 'DM Sans', sans-serif;
-font-weight: 400;
-font-size: 36px;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: $hoverColor;
-padding-top: 16px;
-}
-&__describe{
+  }
+  &__number {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $hoverColor;
+    padding-top: 16px;
+  }
+  &__describe {
     padding-top: 20px;
     font-weight: 700;
-font-size: 12px;
-line-height: 170%;
-color: $primaryTextColor;
+    font-size: 12px;
+    line-height: 170%;
+    color: $primaryTextColor;
+    max-width: 230px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .tradition {
+    padding-top: 130px;
+    padding-bottom: 140px;
+    background-image: none;
+    &__subtitle {
+      font-size: 26px;
+    }
+    &__title {
+      font-size: 48px;
+      padding-bottom: 100px;
+    }
+    &__wrap {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__image {
+      width: 340px;
+      height: 339px;
+    }
+    &__text-wrap{
+      align-items: normal;
+    }
+    &__first-text {
+      font-size: 14px;
+      line-height: 176%;
+      max-width: 340px;
+    }
+    &__second-text,
+    &__third-text {
+      font-size: 14px;
+      line-height: 176%;
+      max-width: 340px;
+    }
+    &__btn-wrap {
+      margin-top: 62px;
+      justify-content: flex-start;
+    }
+    &__list {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &__number {
+      font-size: 48px;
+      padding-top: 36px;
+    }
+    &__describe {
+      font-size: 14px;
+      line-height: 174%;
+      max-width: 180px;
+    }
+  }
 }
-//  hfudu g dhk fdh g
+@media screen and (min-width: 1200px) {
+  .tradition {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background-image: url(../img/tradition/background@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../img/tradition/background@2x.png');
+    }
+    &__subtitle {
+      font-size: 30px;
+    }
+    &__title{
+      font-size: 58px;
+      padding-bottom: 106px;
+    }
+&__image{
+  width: 516px;
+height: 516px;
+}
+&__first-text{
+  font-size: 16px;
+  max-width: 463px;
+}
+&__second-text, &__third-text{
+  line-height: 194%;
+}
+&__number{
+  font-size: 58px;
+  padding-top: 40px;
+}
+&__describe{
+  font-size: 16px;
+line-height: 176%;
+max-width: 330px;
+}
+  }
+}
