@@ -34,11 +34,6 @@
     padding-top: 24px;
 }
 
-.product__img {
-    display: flex;
-    justify-content: space-between;
-}
-
 .product__text {
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
@@ -77,14 +72,100 @@
     align-items: center;
 }
 
+.product__img {
+    display: block;
+    justify-content: space-between;
+}
+
 .product__item {
-    display: flex;
-    flex-direction: column;
+    display: block;
     align-items: center;
 }
-.product__button{
+
+.product__button {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 120px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+    .product__coffee {
+        width: 220px;
+    }
+
+    .product__cream {
+        width: 220px;
+    }
+
+    .product__milkshakes {
+        width: 220px;
+    }
+
+    .product__button {
+        padding-left: 90px;
+    }
+
+    .product__subtitle {
+        font-size: 26px;
+    }
+
+    .product__title {
+        font-size: 48px;
+    }
+
+    .product__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product__name {
+        font-size: 20px;
+    }
+
+    .product__text {
+        font-size: 14px;
+    }
+
+    .product__img {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product__coffee {
+        width: 329px;
+    }
+
+    .product__cream {
+        width: 329px;
+    }
+
+    .product__milkshakes {
+        width: 329px;
+    }
+
+    .product__name {
+        font-size: 30px;
+    }
+
+    .product__text {
+        font-size: 16px;
+    }
+
+    .product__subtitle {
+        font-size: 30px;
+    }
+
+    .product__button {
+        padding-left: 145px;
+    }
+
+    .product__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
