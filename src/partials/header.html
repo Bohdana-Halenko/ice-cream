@@ -9,16 +9,77 @@
     <img src="../img/header/logo@1x.png"
          alt="logo">
 </picture>
-    <nav class="header__nav">
-    </div class="header__list">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">How it`s made?</a></li>
-        <li><a href="#">Our products</a></li>
-        <li><a href="#">Contract</a></li>
+    <ul class="menu-list">
+        <li class="menu-list-item">
+            <a href="#header"
+               class="menu__link">Home</a>
+        </li>
+        <li class="menu-list-item">
+            <a href="#"
+               class="menu__link">About us</a>
+        </li>
+        <li class="menu-list-item">
+            <a href="#"
+               class="menu__link">How it’s made?</a>
+        </li>
+        <li class="menu-list-item">
+            <a href="#"
+               class="menu__link">Our products</a>
+        </li>
+        <li class="menu-list-item">
+            <a href="#"
+               class="menu__link">Contact</a>
+        </li>
     </ul>
-</nav>
+    <div class="menu-container modal"
+         id="mobile-menu"
+         data-modal="1">
+        <button class="menu-button close-button js-modal-close"
+                aria-controls="mobile-menu">
+            <svg width="14px"
+                 height="14px"
+                 aria-label="mobile menu trigger">
+                <use class="icon-close"
+                     href="./images/icons-sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <button class="buy-button js-open-modal"
+                data-modal="2">
+            Buy now
+            <svg class="buy-button__icon"
+                 width="10px"
+                 height="10px">
+                <use class="buy-button__icon--mob"
+                     href="./images/icons-sprite.svg#icon-arrowmob"></use>
+                <use class="buy-button__icon--tab"
+                     href="./images/icons-sprite.svg#icon-arrowtab"></use>
+            </svg>
+        </button>
+        <nav class="site-nav">
+            <ul class="site-nav__list list">
+                <li class="site-nav__item">
+                    <a href="index.html"
+                       class="site-nav__link link js-modal-close">Home</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="#"
+                       class="site-nav__link link js-modal-close">About us</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="#"
+                       class="site-nav__link link js-modal-close">How it&#8217;s made?</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="#"
+                       class="site-nav__link link js-modal-close">Our products</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="#"
+                       class="site-nav__link link js-modal-close">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <button class="header__button">Buy now 
     <svg class="header__icon"
          width="6" height="10">
