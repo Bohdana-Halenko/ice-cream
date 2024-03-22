@@ -1,4 +1,4 @@
-.product{
+.product {
     padding-top: 121px;
     padding-bottom: 96px;
 }
@@ -20,6 +20,7 @@
     text-transform: uppercase;
     text-align: center;
     color: $hoverColor;
+    padding-bottom: 31px;
 }
 
 .product__name {
@@ -30,11 +31,12 @@
     text-transform: uppercase;
     text-align: center;
     color: $secondaryTextColor;
+    padding-top: 24px;
 }
 
 .product__img {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
 }
 
 .product__text {
@@ -51,32 +53,38 @@
     background-color: $firstCardColor;
     border-radius: 24px;
     width: 280px;
-    padding-bottom: 17px;
+    margin-bottom: 17px;
 }
 
 .product__coffee {
     background-color: $secondCardColor;
     border-radius: 24px;
-    padding-top: 17px;
     width: 280px;
-    padding-bottom: 16px;
 }
 
 .product__milkshakes {
     background-color: $thirdCardColor;
     border-radius: 24px;
     width: 280px;
-    padding-top: 16;
+    margin-top: 16px;
 }
-.product__link{
+
+.product__link {
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.product__item{
-    display: block;
-    justify-content: center;
+
+.product__item {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+.product__button{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 120px;
+    cursor: pointer;
 }
