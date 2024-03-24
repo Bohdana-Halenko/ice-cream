@@ -22,14 +22,20 @@
   margin-bottom: 43px;
 }
 .footer__svg {
-  fill: #fea5bb;
+  fill: $secondaryTextColor;
+}
+.footer__link{
+  background-color: #FEA5BB;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition-duration: 450ms;
 }
-.footer__svg:hover,
-.footer__svg:focus {
-  fill: $hoverColor;
-  cursor: pointer;
-  transition-duration: 450ms;
+.footer__link:hover{
+  background-color: $hoverColor;
 }
 .footer__wrap:hover > p {
   color: $hoverColor;

@@ -42,6 +42,25 @@
   align-items: center;
   margin-top: 50px;
 }
+.reviews__icon{
+  width: 73px;
+  display: flex;
+  justify-content: space-between;
+}
+.home{
+  fill: #D31342;
+  transition-duration: 450ms;
+}
+.home:hover{
+  fill: #d9d9d9;
+}
+.point{
+  fill: #d9d9d9;
+  transition-duration: 450ms;
+}
+.point:hover{
+  fill: #D31342;
+}
 .reviews {
   padding-bottom: 86px;
 }
