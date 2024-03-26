@@ -33,12 +33,26 @@
   justify-content: center;
   align-items: center;
   transition-duration: 450ms;
+  display: flex;
 }
 .footer__link:hover{
   background-color: $hoverColor;
 }
 .footer__wrap:hover > p {
   color: $hoverColor;
+}
+.footer__link{
+  background-color: #FEA5BB;
+  border-radius: 100%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 450ms;
+}
+.footer__link:hover{
+  background-color: $hoverColor;
 }
 .footer__wrap-text:hover > .footer__phone {
   color: $primaryTextColor;
