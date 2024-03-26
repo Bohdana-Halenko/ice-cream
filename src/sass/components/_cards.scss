@@ -1,9 +1,67 @@
+
 .card {
-    width: 330px;
-    height: 572px;
+    width: calc(100% - 20px);
+    height: auto;
     background-color: #ffffff;
     border-radius: 24px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     box-sizing: border-box;
+    margin: 0 auto;
+    
+}
+
+@media (min-width: 768px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 220px;
+        height: 427px;
+        border-radius: 24px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .card__pink{
+        color:$firstCardColor;
+        margin-bottom: 10px;
+    }
+.card__city{
+    margin-bottom: 3px;
+}
+.card__citys{
+    margin-bottom: 10px;
+}
+.card__span{
+    margin-bottom: 25px;
+    border-radius: 4px;
+    width: 80px;
+    height: 16px; 
+    background-color: $secondCardColor;
+    color: $secondaryTextColor;
+}
+.card__title{
+    margin-bottom: 25px;
+    border-radius: 4px;
+    width: 80px;
+    height: 16px; 
+    background-color: $thirdCardColor;
+    color: $secondaryTextColor;
+}
+.card__text{
+    height: 36px;
+    width: 179px;
+    margin-bottom: 50px;
+    opacity: 0.7;
+}
+.card__telephone{
+    color: black;
+    opacity: 0.7;
+}
+.card__email{
+    color: black;
+    opacity: 0.7;
+}
 }
