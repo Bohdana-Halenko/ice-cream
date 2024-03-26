@@ -1,9 +1,83 @@
 .card {
-    width: 330px;
-    height: 572px;
-    background-color: #ffffff;
-    border-radius: 24px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
+  padding: 43px 20px;
+  width: 220px;
+}
+.card__pink {
+  color: $firstCardColor;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+}
+.card__list-pink {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $borderColor;
+}
+.card__first-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.cards {
+  display: flex;
+}
+.card__city {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  margin-top: 25px;
+}
+.card__list-city {
+  margin-top: 0;
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+}
+.card__span {
+  margin-bottom: 25px;
+  border-radius: 4px;
+  padding: 2px 35px;
+  background-color: $secondCardColor;
+  color: $secondaryTextColor;
+  font-size: 12px;
+  font-weight: 500;
+}
+.card__title {
+  margin-bottom: 25px;
+  border-radius: 4px;
+  padding: 2px 20px;
+  background-color: $thirdCardColor;
+  color: $secondaryTextColor;
+  font-weight: 500;
+  font-size: 12px;
+}
+.card__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: $textColor;
+  padding-bottom: 25px;
+  opacity: 0.7;
+  border-bottom: 1px solid $borderColor;
+}
+.card__list-telephone {
+  margin-top: 25px;
+}
+.card__telephone {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: $textColor;
+}
+.card__email {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: $textColor;
 }
