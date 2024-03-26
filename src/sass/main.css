@@ -65,9 +65,10 @@ body {
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
   color: #ffb8ca;
-  display: flex;
-  justify-content: center;
 }
 
 .product__title {
@@ -78,6 +79,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #d41443;
+  padding-bottom: 31px;
 }
 
 .product__name {
@@ -88,11 +90,12 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  padding-top: 200px;
 }
 
 .product__img {
-  display: flex;
-  justify-content: space-between;
+  position: absolute;
+  bottom: 440px;
 }
 
 .product__text {
@@ -103,28 +106,32 @@ body {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .product__cream {
   background-color: #ffb8ca;
   border-radius: 24px;
   width: 280px;
-  padding-bottom: 17px;
+  margin-bottom: 130px;
+  margin-top: 144px;
+  position: relative;
 }
 
 .product__coffee {
   background-color: #f0d1a5;
   border-radius: 24px;
-  padding-top: 17px;
   width: 280px;
-  padding-bottom: 16px;
+  position: relative;
 }
 
 .product__milkshakes {
   background-color: #c2e297;
   border-radius: 24px;
   width: 280px;
-  padding-top: 16;
+  margin-top: 130px;
+  position: relative;
 }
 
 .product__link {
@@ -136,11 +143,24 @@ body {
 }
 
 .product__item {
-  display: block;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
+.product__button {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .product__item {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .tradition {
   padding-top: 125px;
   padding-bottom: 125px;
@@ -454,6 +474,30 @@ body {
   margin-top: 50px;
 }
 
+.reviews__icon {
+  width: 73px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home {
+  fill: #D31342;
+  transition-duration: 450ms;
+}
+
+.home:hover {
+  fill: #d9d9d9;
+}
+
+.point {
+  fill: #d9d9d9;
+  transition-duration: 450ms;
+}
+
+.point:hover {
+  fill: #D31342;
+}
+
 .reviews {
   padding-bottom: 86px;
 }
@@ -554,15 +598,22 @@ body {
 }
 
 .footer__svg {
-  fill: #fea5bb;
+  fill: #fff;
+}
+
+.footer__link {
+  background-color: #FEA5BB;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition-duration: 450ms;
 }
 
-.footer__svg:hover,
-.footer__svg:focus {
-  fill: #d41443;
-  cursor: pointer;
-  transition-duration: 450ms;
+.footer__link:hover {
+  background-color: #d41443;
 }
 
 .footer__wrap:hover > p {

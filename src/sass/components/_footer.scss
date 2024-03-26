@@ -23,7 +23,20 @@
 }
 .footer__svg {
   fill: $secondaryTextColor;
+}
+.footer__link{
+  background-color: #FEA5BB;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 450ms;
+  display: flex;
+}
+.footer__link:hover{
+  background-color: $hoverColor;
 }
 .footer__wrap:hover > p {
   color: $hoverColor;
