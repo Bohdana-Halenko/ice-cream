@@ -370,6 +370,8 @@ body {
   margin-top: 17px;
 }
 .tradition__btn {
+  display: flex;
+  align-items: center;
   background-color: #fff;
   border: none;
   border-radius: 22px;
@@ -384,8 +386,11 @@ body {
   transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 .tradition__btn:hover {
-  background-color: #d41443;
-  color: #fff;
+  background-color: #ECEBEB;
+}
+.tradition__arrow {
+  fill: #d41443;
+  margin-left: 13px;
 }
 .tradition__list {
   display: flex;
