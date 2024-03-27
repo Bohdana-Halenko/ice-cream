@@ -1,246 +1,256 @@
 .product {
-    padding-top: 121px;
-    padding-bottom: 96px;
+  padding-top: 121px;
+  padding-bottom: 96px;
 }
-.product__subtitle { 
-  font-family: "Titan One", sans-serif; 
-  font-weight: 400; 
-  font-size: 18px; 
-  text-transform: uppercase; 
-  text-align: center; 
+.product__wrap{
+    display: flex;
+    flex-direction: column;
+}
+.product__subtitle {
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
   display: block;
   margin: 0 auto;
-  color: $firstCardColor; 
-} 
+  color: $firstCardColor;
+}
 .product__title {
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
-    font-size: 34px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    color: $hoverColor;
-    padding-bottom: 31px;
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $hoverColor;
+  padding-bottom: 31px;
 }
 
 .product__name {
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    color: $secondaryTextColor;
-    padding-top: 24px;
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondaryTextColor;
+  padding-top: 24px;
 }
-.product__title { 
-  font-family: "Titan One", sans-serif; 
-  font-weight: 400; 
-  font-size: 34px; 
-  letter-spacing: 0.04em; 
-  text-transform: uppercase; 
-  text-align: center; 
-  color: $hoverColor; 
-  padding-bottom: 31px; 
-} 
+.product__title {
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $hoverColor;
+  padding-bottom: 31px;
+}
 
-.product__name { 
-  font-family: "Titan One", sans-serif; 
-  font-weight: 400; 
-  font-size: 30px; 
-  letter-spacing: 0.04em; 
-  text-transform: uppercase; 
-  text-align: center; 
-  color: $secondaryTextColor; 
-  padding-top: 200px; 
-} 
+.product__name {
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondaryTextColor;
+  padding-top: 200px;
+}
 
-.product__img { 
+.product__img {
   position: absolute;
   bottom: 440px;
 }
 
-.product__text { 
-  font-family: "DM Sans", sans-serif; 
-  font-weight: 700; 
-  font-size: 16px; 
-  line-height: 176%; 
-  letter-spacing: 0.04em; 
-  text-align: center; 
-  color: $secondaryTextColor; 
+.product__text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: $secondaryTextColor;
   padding-right: 40px;
   padding-left: 40px;
-} 
+}
 .product__cream {
-    background-color: $firstCardColor;
-    border-radius: 24px;
-    width: 280px;
+  margin-top: 144px;
+  position: relative;
+  background-color: $firstCardColor;
+  border-radius: 24px;
+  width: 280px;
 }
 
 .product__coffee {
-    background-color: $secondCardColor;
-    border-radius: 24px;
-    width: 280px;
+  margin-top: 130px;
+  position: relative;
+  background-color: $secondCardColor;
+  border-radius: 24px;
+  width: 280px;
 }
 
 .product__milkshakes {
-    background-color: $thirdCardColor;
-    border-radius: 24px;
-    width: 280px;
+  margin-top: 129px;
+  position: relative;
+  background-color: $thirdCardColor;
+  border-radius: 24px;
+  width: 280px;
 }
 
 .product__link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__img {
+  display: block;
+  justify-content: space-between;
+}
+
+.product__item {
+  margin: 0 auto;
+}
+
+.product__button {
+  padding-top: 30px;
+  padding-bottom: 41px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+  .product__coffee {
+    width: 220px;
+  }
+
+  .product__cream {
+    width: 220px;
+  }
+
+  .product__milkshakes {
+    width: 220px;
+  }
+
+  .product__subtitle {
+    font-size: 26px;
+  }
+
+  .product__title {
+    font-size: 48px;
+  }
+
+  .product__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product__name {
+    padding-top: 140px;
+    font-size: 20px;
+  }
+
+  .product__text {
+    font-size: 14px;
+  }
+
+  .product__img {
+    bottom: 450px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product__coffee {
+    margin-top: 150px;
+    width: 329px;
+  }
+
+  .product__cream {
+    margin-top: 150px;
+    width: 329px;
+  }
+
+  .product__milkshakes {
+    margin-top: 150px;
+    width: 329px;
+  }
+
+  .product__name {
+    font-size: 30px;
+  }
+
+  .product__text {
+    font-size: 16px;
+  }
+
+  .product__subtitle {
+    font-size: 30px;
+  }
+
+  .product__button {
+    padding-left: 145px;
+  }
+
+  .product__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .product__cream {
+    background-color: $firstCardColor;
+    border-radius: 24px;
+    width: 280px;
+    margin-bottom: 130px;
+    margin-top: 144px;
+    position: relative;
+  }
+
+  .product__coffee {
+    background-color: $secondCardColor;
+    border-radius: 24px;
+    width: 280px;
+    position: relative;
+  }
+
+  .product__milkshakes {
+    background-color: $thirdCardColor;
+    border-radius: 24px;
+    width: 280px;
+    margin-top: 130px;
+    position: relative;
+  }
+
+  .product__link {
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.product__img {
-    display: block;
-    justify-content: space-between;
-}
-
-.product__item {
-    display: block;
+  .product__item {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
+  }
 
-.product__button {
+  .product__button {
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 120px;
+    margin: 0 auto;
     cursor: pointer;
+  }
 }
-
-@media screen and (min-width: 767px) {
-    .product__coffee {
-        width: 220px;
-    }
-
-    .product__cream {
-        width: 220px;
-    }
-
-    .product__milkshakes {
-        width: 220px;
-    }
-
-    .product__button {
-        padding-left: 90px;
-    }
-
-    .product__subtitle {
-        font-size: 26px;
-    }
-
-    .product__title {
-        font-size: 48px;
-    }
-
-    .product__item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .product__name {
-        font-size: 20px;
-    }
-
-    .product__text {
-        font-size: 14px;
-    }
-
-    .product__img {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .product__coffee {
-        width: 329px;
-    }
-
-    .product__cream {
-        width: 329px;
-    }
-
-    .product__milkshakes {
-        width: 329px;
-    }
-
-    .product__name {
-        font-size: 30px;
-    }
-
-    .product__text {
-        font-size: 16px;
-    }
-
-    .product__subtitle {
-        font-size: 30px;
-    }
-
-    .product__button {
-        padding-left: 145px;
-    }
-
-    .product__item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-.product__cream { 
-  background-color: $firstCardColor; 
-  border-radius: 24px; 
-  width: 280px; 
-  margin-bottom: 130px; 
-  margin-top: 144px; 
-  position: relative;
-} 
-
-.product__coffee { 
-  background-color: $secondCardColor; 
-  border-radius: 24px; 
-  width: 280px; 
-  position: relative;
-} 
-
-.product__milkshakes { 
-  background-color: $thirdCardColor; 
-  border-radius: 24px; 
-  width: 280px; 
-  margin-top: 130px; 
-  position: relative;
-} 
-
-.product__link { 
-  padding-top: 30px; 
-  padding-bottom: 30px; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-} 
-
-.product__item { 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-}
-
-.product__button { 
-  padding-top: 30px; 
-  padding-bottom: 30px; 
-  margin: 0 auto;
-  cursor: pointer; 
-} 
-}
-@media screen and (min-width: 768px) { 
-  .product__item { 
-      display: flex;
-      justify-content: space-between;
-  } 
+@media screen and (min-width: 768px) {
+  .product__item {
+    display: flex;
+    margin: 0 auto;
+  }
 }
