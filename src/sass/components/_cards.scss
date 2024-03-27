@@ -6,23 +6,6 @@
   padding: 43px 20px;
   width: 220px;
 }
-
-@media (min-width: 768px) {
-    .card {
-        width: 220px;
-        height: 427px;
-        border-radius: 24px;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-    .card__pinks{
-        color:$firstCardColor;
-       margin-bottom: 10px;
-    }
-    .card__pink{
-        color:$firstCardColor;
-        margin-bottom: 50px;
-    }
 .card__city{
     margin-bottom: 3px;
  }
@@ -102,7 +85,25 @@
   line-height: 150%;
   color: $textColor;
 }
-@media only screen and (max-width: 768px) {
+
+@media (min-width: 768px) {
+  .card {
+      width: 220px;
+      height: 427px;
+      border-radius: 24px;
+      margin: 0;
+      margin-bottom: 20px;
+  }
+  .card__pinks{
+      color:$firstCardColor;
+     margin-bottom: 10px;
+  }
+  .card__pink{
+      color:$firstCardColor;
+      margin-bottom: 50px;
+  }
+}
+@media (max-width: 768px) {
     .card {
         width: 220px;
         height: 544px;
