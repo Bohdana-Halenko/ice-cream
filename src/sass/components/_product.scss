@@ -2,16 +2,16 @@
     padding-top: 121px;
     padding-bottom: 96px;
 }
-
-.product__subtitle {
-    font-family: "Titan One", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
-    color: $firstCardColor;
-}
-
+.product__subtitle { 
+  font-family: "Titan One", sans-serif; 
+  font-weight: 400; 
+  font-size: 18px; 
+  text-transform: uppercase; 
+  text-align: center; 
+  display: block;
+  margin: 0 auto;
+  color: $firstCardColor; 
+} 
 .product__title {
     font-family: "Titan One", sans-serif;
     font-weight: 400;
@@ -33,17 +33,45 @@
     color: $secondaryTextColor;
     padding-top: 24px;
 }
+=======
+.product__title { 
+  font-family: "Titan One", sans-serif; 
+  font-weight: 400; 
+  font-size: 34px; 
+  letter-spacing: 0.04em; 
+  text-transform: uppercase; 
+  text-align: center; 
+  color: $hoverColor; 
+  padding-bottom: 31px; 
+} 
 
-.product__text {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 176%;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: $secondaryTextColor;
+.product__name { 
+  font-family: "Titan One", sans-serif; 
+  font-weight: 400; 
+  font-size: 30px; 
+  letter-spacing: 0.04em; 
+  text-transform: uppercase; 
+  text-align: center; 
+  color: $secondaryTextColor; 
+  padding-top: 200px; 
+} 
+
+.product__img { 
+  position: absolute;
+  bottom: 440px;
 }
 
+.product__text { 
+  font-family: "DM Sans", sans-serif; 
+  font-weight: 700; 
+  font-size: 16px; 
+  line-height: 176%; 
+  letter-spacing: 0.04em; 
+  text-align: center; 
+  color: $secondaryTextColor; 
+  padding-right: 40px;
+  padding-left: 40px;
+} 
 .product__cream {
     background-color: $firstCardColor;
     border-radius: 24px;
@@ -166,4 +194,54 @@
         justify-content: space-between;
         align-items: center;
     }
+.product__cream { 
+  background-color: $firstCardColor; 
+  border-radius: 24px; 
+  width: 280px; 
+  margin-bottom: 130px; 
+  margin-top: 144px; 
+  position: relative;
+} 
+
+.product__coffee { 
+  background-color: $secondCardColor; 
+  border-radius: 24px; 
+  width: 280px; 
+  position: relative;
+} 
+
+.product__milkshakes { 
+  background-color: $thirdCardColor; 
+  border-radius: 24px; 
+  width: 280px; 
+  margin-top: 130px; 
+  position: relative;
+} 
+
+.product__link { 
+  padding-top: 30px; 
+  padding-bottom: 30px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+} 
+
+.product__item { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.product__button { 
+  padding-top: 30px; 
+  padding-bottom: 30px; 
+  margin: 0 auto;
+  cursor: pointer; 
+} 
+
+@media screen and (min-width: 768px) { 
+  .product__item { 
+      display: flex;
+      justify-content: space-between;
+  } 
 }
