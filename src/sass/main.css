@@ -90,6 +90,28 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  padding-top: 24px;
+}
+
+.product__title {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d41443;
+  padding-bottom: 31px;
+}
+
+.product__name {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
   padding-top: 200px;
 }
 
@@ -114,24 +136,18 @@ body {
   background-color: #ffb8ca;
   border-radius: 24px;
   width: 280px;
-  margin-bottom: 130px;
-  margin-top: 144px;
-  position: relative;
 }
 
 .product__coffee {
   background-color: #f0d1a5;
   border-radius: 24px;
   width: 280px;
-  position: relative;
 }
 
 .product__milkshakes {
   background-color: #c2e297;
   border-radius: 24px;
   width: 280px;
-  margin-top: 130px;
-  position: relative;
 }
 
 .product__link {
@@ -142,19 +158,125 @@ body {
   align-items: center;
 }
 
+.product__img {
+  display: block;
+  justify-content: space-between;
+}
+
 .product__item {
-  display: flex;
-  flex-direction: column;
+  display: block;
   align-items: center;
 }
 
 .product__button {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin: 0 auto;
+  padding-left: 120px;
   cursor: pointer;
 }
 
+@media screen and (min-width: 767px) {
+  .product__coffee {
+    width: 220px;
+  }
+  .product__cream {
+    width: 220px;
+  }
+  .product__milkshakes {
+    width: 220px;
+  }
+  .product__button {
+    padding-left: 90px;
+  }
+  .product__subtitle {
+    font-size: 26px;
+  }
+  .product__title {
+    font-size: 48px;
+  }
+  .product__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .product__name {
+    font-size: 20px;
+  }
+  .product__text {
+    font-size: 14px;
+  }
+  .product__img {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__coffee {
+    width: 329px;
+  }
+  .product__cream {
+    width: 329px;
+  }
+  .product__milkshakes {
+    width: 329px;
+  }
+  .product__name {
+    font-size: 30px;
+  }
+  .product__text {
+    font-size: 16px;
+  }
+  .product__subtitle {
+    font-size: 30px;
+  }
+  .product__button {
+    padding-left: 145px;
+  }
+  .product__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .product__cream {
+    background-color: #ffb8ca;
+    border-radius: 24px;
+    width: 280px;
+    margin-bottom: 130px;
+    margin-top: 144px;
+    position: relative;
+  }
+  .product__coffee {
+    background-color: #f0d1a5;
+    border-radius: 24px;
+    width: 280px;
+    position: relative;
+  }
+  .product__milkshakes {
+    background-color: #c2e297;
+    border-radius: 24px;
+    width: 280px;
+    margin-top: 130px;
+    position: relative;
+  }
+  .product__link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product__button {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}
 @media screen and (min-width: 768px) {
   .product__item {
     display: flex;
@@ -458,6 +580,32 @@ body {
   z-index: 0;
 }
 
+.home {
+  fill: #D31342;
+  transition-duration: 450ms;
+  cursor: pointer;
+}
+
+.home:hover {
+  fill: #d9d9d9;
+}
+
+.reviews__list-icon {
+  width: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.point {
+  fill: #d9d9d9;
+  transition-duration: 450ms;
+  cursor: pointer;
+}
+
+.point:hover {
+  fill: #D31342;
+}
+
 .reviews__wrap-text {
   margin-top: 18px;
   margin-bottom: 30px;
@@ -562,13 +710,99 @@ body {
   }
 }
 .card {
-  width: 330px;
-  height: 572px;
   background-color: #ffffff;
   border-radius: 24px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  box-sizing: border-box;
+  box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
+  padding: 43px 20px;
+  width: 220px;
+}
+
+.card__pink {
+  color: #ffb8ca;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+}
+
+.card__list-pink {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.card__first-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+}
+
+.card__city {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  margin-top: 25px;
+}
+
+.card__list-city {
+  margin-top: 0;
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+}
+
+.card__span {
+  margin-bottom: 25px;
+  border-radius: 4px;
+  padding: 2px 35px;
+  background-color: #f0d1a5;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card__title {
+  margin-bottom: 25px;
+  border-radius: 4px;
+  padding: 2px 20px;
+  background-color: #c2e297;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.card__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #907e82;
+  padding-bottom: 25px;
+  opacity: 0.7;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.card__list-telephone {
+  margin-top: 25px;
+}
+
+.card__telephone {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #907e82;
+}
+
+.card__email {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #907e82;
 }
 
 .footer {
@@ -610,6 +844,7 @@ body {
   justify-content: center;
   align-items: center;
   transition-duration: 450ms;
+  display: flex;
 }
 
 .footer__link:hover {
@@ -618,6 +853,21 @@ body {
 
 .footer__wrap:hover > p {
   color: #d41443;
+}
+
+.footer__link {
+  background-color: #FEA5BB;
+  border-radius: 100%;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 450ms;
+}
+
+.footer__link:hover {
+  background-color: #d41443;
 }
 
 .footer__wrap-text:hover > .footer__phone {
