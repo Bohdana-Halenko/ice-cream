@@ -1,141 +1,120 @@
-<header class="header container">
-    
-    <div class="header__logo">
-<picture>
-    <source srcset="img/header/logo@1x.png 1x, img/header/logo@2x.png 2x"
-            type="image/png">
-    <source srcset="img/header/logo@1x.webp 1x, img/header/logo@2x.webp 2x"
-            type="image/webp">
-    <img src="../img/header/logo@1x.png"
-         alt="logo">
-</picture>
-    <ul class="menu-list">
-        <li class="menu-list-item">
-            <a href="#header"
-               class="menu__link">Home</a>
-        </li>
-        <li class="menu-list-item">
-            <a href="#"
-               class="menu__link">About us</a>
-        </li>
-        <li class="menu-list-item">
-            <a href="#"
-               class="menu__link">How it’s made?</a>
-        </li>
-        <li class="menu-list-item">
-            <a href="#"
-               class="menu__link">Our products</a>
-        </li>
-        <li class="menu-list-item">
-            <a href="#"
-               class="menu__link">Contact</a>
-        </li>
-    </ul>
-    <div class="menu-container modal"
-         id="mobile-menu"
-         data-modal="1">
-        <button class="menu-button close-button js-modal-close"
-                aria-controls="mobile-menu">
-            <svg width="14px"
-                 height="14px"
-                 aria-label="mobile menu trigger">
-                <use class="icon-close"
-                     href="./images/icons-sprite.svg#icon-close"></use>
-            </svg>
-        </button>
-        <button class="buy-button js-open-modal"
-                data-modal="2">
-            Buy now
-            <svg class="buy-button__icon"
-                 width="10px"
-                 height="10px">
-                <use class="buy-button__icon--mob"
-                     href="./images/icons-sprite.svg#icon-arrowmob"></use>
-                <use class="buy-button__icon--tab"
-                     href="./images/icons-sprite.svg#icon-arrowtab"></use>
-            </svg>
-        </button>
-        <nav class="site-nav">
-            <ul class="site-nav__list list">
-                <li class="site-nav__item">
-                    <a href="index.html"
-                       class="site-nav__link link js-modal-close">Home</a>
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <picture>
+                <source srcset="img/header/logo@1x.png 1x, img/header/logo@2x.png 2x"
+                        type="image/png">
+                <source srcset="img/header/logo@1x.webp 1x, img/header/logo@2x.webp 2x"
+                        type="image/webp">
+                <img src="../img/header/logo@1x.png"
+                     alt="logo">
+            </picture>
+            <ul class="header__menu-list">
+                <li class="header__menu-list-item">
+                    <a href="#header"
+                       class="menu__link">Home</a>
                 </li>
-                <li class="site-nav__item">
+                <li class="header__menu-list-item">
                     <a href="#"
-                       class="site-nav__link link js-modal-close">About us</a>
+                       class="header__menu-link">About us</a>
                 </li>
-                <li class="site-nav__item">
+                <li class="header__menu-list-item">
                     <a href="#"
-                       class="site-nav__link link js-modal-close">How it&#8217;s made?</a>
+                       class="header__menu-link">How it’s made?</a>
                 </li>
-                <li class="site-nav__item">
+                <li class="header__menu-list-item">
                     <a href="#"
-                       class="site-nav__link link js-modal-close">Our products</a>
+                       class="header__menu-link">Our products</a>
                 </li>
-                <li class="site-nav__item">
+                <li class="header__menu-list-item">
                     <a href="#"
-                       class="site-nav__link link js-modal-close">Contact</a>
+                       class="header__menu-link">Contact</a>
                 </li>
             </ul>
-        </nav>
+            <div class="menu-container modal"
+                 id="mobile-menu"
+                 data-modal="1">
+                <button class="header__menu-button close-button js-modal-close"></button>
+                <button class="buy-button js-open-modal"
+                        data-modal="2">
+                    Buy now
+                </button>
+                <nav class="header__site-nav">
+                    <ul class="site-nav__list list">
+                        <li class="site-nav__item">
+                            <a href="index.html"
+                               class="site-nav__link link js-modal-close">Home</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="#"
+                               class="site-nav__link link js-modal-close">About us</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="#"
+                               class="site-nav__link link js-modal-close">How it's made?</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="#"
+                               class="site-nav__link link js-modal-close">Our products</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="#"
+                               class="site-nav__link link js-modal-close">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="header__button">Buy now
+                
+            </button>
+            <div class="header__text-button">
+                <h2 class="header__white-text">ice-cream made with <span>passion</span></h2>
+                <button class="header__white-button">Products</button>
+                <button class="header__red-button">How it’s made?</button>
+            </div>
+            <div class="header__ice-cream">
+                <picture>
+                    <source srcset="img/header/ice-cream@1x.png 1x, img/header/ice-cream@2x.png 2x"
+                            type="image/png">
+                    <source srcset="img/header/ice-cream@1x.webp 1x, img/header/ice-cream@2x.webp 2x"
+                            type="image/webp">
+                    <img src="../img/header/ice-cream@1x.png"
+                         alt="ice-cream">
+                </picture>
+            </div>
+            <div class="hero-service-counting">
+                <ul class="hero-counting-list list">
+                    <li><span class="hero-number">16</span>cafes</li>
+                    <li><span class="hero-number">23</span>food trucks</li>
+                </ul>
+            </div>
+            <div class="header__milk">
+                <picture>
+                    <source srcset="img/header/milk@1x.png 1x, img/header/milk@2x.png 2x"
+                            type="image/png">
+                    <source srcset="img/header/milk@1x.webp 1x, img/header/milk@2x.webp 2x"
+                            type="image/webp">
+                    <img src="../img/header/milk@1x.png"
+                         alt="milk">
+                </picture>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <svg class="header__icon"
+                     width="26"
+                     height="26">
+                    <use href="../img/svg/arrow-right.png"></use>
+                </svg>
+            </div>
+            <div class="header__girl">
+                <picture>
+                    <source srcset="img/header/tasty@1x.png 1x, img/header/tasty@2x.png 2x"
+                            type="image/png">
+                    <source srcset="img/header/tasty@1x.webp 1x, img/header/tasty@2x.webp 2x"
+                            type="image/webp">
+                    <img src="../img/header/tasty@1x.png"
+                         alt="girl">
+                </picture>
+            </div>
     </div>
-    <button class="header__button">Buy now 
-    <svg class="header__icon"
-         width="6" height="10">
-        <use href="../img/symbol-defs.svg#icon-close-menu"></use>
-    </svg>
-    </button>
-    <div class="header__text-button">
-    <h2 class="header__white-text">ice-cream made with</h2>
-    <h2 class="header__red-text">passion</h2>
-    <button class="header__white-button">Products</button>
-    <button class="header__red-button">How it’s made?</button>
-    </div>
-    <div class="header__ice-cream">
-        <picture>
-            <source srcset="img/header/ice-cream@1x.png 1x, img/header/ice-cream@2x.png 2x"
-                    type="image/png">
-            <source srcset="img/header/ice-cream@1x.webp 1x, img/header/ice-cream@2x.webp 2x"
-                    type="image/webp">
-            <img src="../img/header/ice-cream@1x.png"
-                 alt="ice-cream">
-        </picture>
-    </div>
-    <ul class="header__number-text">
-        <li>
-            <div class="header__circle"></div>
-            <h2 class="header__number">16</h2>
-            <p class="header__text">cafes</p>
-        </li>
-        <li>
-            <div class="header__circle"></div>
-            <h2 class="header__number">23</h2>
-            <p class="header__text">food trucks</p>
-        </li>
-    </ul>
-    <div class="header__milk">
-    <picture>
-        <source srcset="img/header/milk@1x.png 1x, img/header/milk@2x.png 2x" type="image/png">
-        <source srcset="img/header/milk@1x.webp 1x, img/header/milk@2x.webp 2x"type="image/webp">
-        <img src="../img/header/milk@1x.png"
-             alt="milk">
-    </picture>
-</div>
-<div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-    <svg class="header__icon"
-         width="26"
-         height="26">
-        <use href="../img/svg/arrow-right.png"></use>
-    </svg>
-</div>
-<div class="header__girl">
-<picture>
-    <source srcset="img/header/tasty@1x.png 1x, img/header/tasty@2x.png 2x" type="image/png">
-    <source srcset="img/header/tasty@1x.webp 1x, img/header/tasty@2x.webp 2x" type="image/webp">
-    <img src="../img/header/tasty@1x.png" alt="girl">
-</picture>
-</div>
-
 </header>
