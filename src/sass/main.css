@@ -64,11 +64,6 @@ body {
   padding-bottom: 96px;
 }
 
-.product__wrap {
-  display: flex;
-  flex-direction: column;
-}
-
 .product__subtitle {
   font-family: "Titan One", sans-serif;
   font-weight: 400;
@@ -142,7 +137,7 @@ body {
 }
 
 .product__cream {
-  margin-top: 144px;
+  margin-top: 130px;
   position: relative;
   background-color: #ffb8ca;
   border-radius: 24px;
@@ -229,7 +224,6 @@ body {
     width: 329px;
   }
   .product__cream {
-    margin-top: 150px;
     width: 329px;
   }
   .product__milkshakes {
@@ -245,11 +239,9 @@ body {
   .product__subtitle {
     font-size: 30px;
   }
-  .product__button {
-    padding-left: 145px;
-  }
   .product__item {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -257,7 +249,6 @@ body {
     background-color: #ffb8ca;
     border-radius: 24px;
     width: 280px;
-    margin-bottom: 130px;
     margin-top: 144px;
     position: relative;
   }
@@ -283,7 +274,6 @@ body {
   }
   .product__item {
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
   .product__button {
