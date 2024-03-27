@@ -463,6 +463,7 @@ body {
   }
   .tradition__number {
     font-size: 48px;
+    display: block;
     padding-top: 36px;
   }
   .tradition__describe {
@@ -515,6 +516,10 @@ body {
     max-width: 330px;
   }
 }
+.tradition__num-wrap {
+  display: flex;
+}
+
 .photo {
   position: relative;
   bottom: 50px;
