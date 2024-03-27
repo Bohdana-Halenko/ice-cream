@@ -33,7 +33,7 @@
         <div class="tradition__icon-one">
           <img class="tradition__icon" src="img/svg/cow-bucket.png" alt="cow-bucket">
         </div>
-        <h2 class="tradition__number">721</h2>
+      <span id="count" class="tradition__number">0</span>
         <p class="tradition__describe">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
@@ -42,7 +42,8 @@
         <div class="tradition__icon-two">
           <img class="tradition__icon" src="img/svg/apple-bucket.png" alt="apple-bucket">
         </div>
-        <h2 class="tradition__number">16KG</h2>
+        <div class="tradition__num-wrap">
+      <span id="number" class="tradition__number">0</span><p class="tradition__number">KG</p></div>
         <p class="tradition__describe">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
@@ -51,7 +52,7 @@
         <div class="tradition__icon-three">
           <img class="tradition__icon" src="img/svg/candy.png" alt="candy">
         </div>
-        <h2 class="tradition__number">84</h2>
+      <span id="numbers" class="tradition__number">0</span>
         <p class="tradition__describe">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
@@ -59,3 +60,24 @@
     </ul>
   </div>
 </section>
+
+
+<script>
+  function increaseNumber(id, endValue, increment) {
+  let current = 0;
+  const element = document.getElementById(id);
+  const interval = setInterval(function() {
+    current += increment;
+    element.textContent = current;
+    if (current >= endValue) {
+      clearInterval(interval);
+    }
+  }, 30);
+}
+
+increaseNumber('count', 721, 5);
+
+increaseNumber('number', 16, 1);
+
+increaseNumber('numbers', 84, 1);
+</script>
