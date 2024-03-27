@@ -49,19 +49,6 @@
   margin-left: 12px;
   fill: $hoverColor;
 }
-
-@media (min-width: 768px) {
-  .card {
-    border-radius: 24px;
-    margin: 0;
-  }
-  .card__pinks {
-    color: $firstCardColor;
-  }
-  .card__pink {
-    color: $firstCardColor;
-  }
-}
 .card__city {
   margin-bottom: 3px;
 }
@@ -149,7 +136,8 @@
   line-height: 186%;
   letter-spacing: 0.04em;
 }
-@media only screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
   .card {
     border-radius: 24px;
     margin: 0;
@@ -194,4 +182,10 @@
     color: black;
     opacity: 0.7;
   }
+}
+
+
+@media screen and (max-width: 1200px){
+
+  
 }
