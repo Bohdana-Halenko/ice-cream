@@ -159,14 +159,12 @@
 }
 @media screen and (min-width: 1200px) {
   .product__coffee {
-    margin-top: 150px;
     width: 329px;
   }
   .product__cream {
     width: 329px;
   }
   .product__milkshakes {
-    margin-top: 150px;
     width: 329px;
   }
   .product__name {
@@ -179,28 +177,29 @@
     font-size: 30px;
   }
   .product__item {
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
   }
   .product__cream {
     background-color: #ffb8ca;
     border-radius: 24px;
-    width: 280px;
+    width: 335px;
     margin-top: 144px;
     position: relative;
   }
   .product__coffee {
     background-color: #f0d1a5;
     border-radius: 24px;
-    width: 280px;
+    width: 335px;
     position: relative;
   }
   .product__milkshakes {
     background-color: #c2e297;
     border-radius: 24px;
-    width: 280px;
+    width: 335px;
     margin-top: 130px;
     position: relative;
   }
@@ -220,6 +219,9 @@
     padding-bottom: 30px;
     margin: 0 auto;
     cursor: pointer;
+  }
+  .product__img {
+    bottom: 370px;
   }
 }
 @media screen and (min-width: 768px) {
