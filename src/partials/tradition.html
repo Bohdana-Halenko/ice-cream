@@ -5,54 +5,83 @@
     <div class="tradition__wrap">
       <div class="tradition__image">
         <picture class="tradition__cow">
-          <source srcset="./img/tradition/cow@1x.png 1x, ./img/tradition/cow@2x.png 2x" type="image/png">
-          <source srcset="./img/tradition/cow@1x.webp 1x, ./img/tradition/cow@2x.webp 2x" type="image/webp">
-          <img src="../img/tradition/cow@1x.png" alt="cow">
+          <source
+            srcset="
+              ./img/tradition/cow@1x.png 1x,
+              ./img/tradition/cow@2x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./img/tradition/cow@1x.webp 1x,
+              ./img/tradition/cow@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img src="../img/tradition/cow@1x.png" alt="cow" />
         </picture>
       </div>
       <div class="tradition__text-wrap">
-      <p class="tradition__first-text">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-        cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
-        justo fringilla.
-      </p>
-      <p class="tradition__second-text">
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-        Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-        suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-        tincidunt. 
-      </p>
-        <span class="tradition__third-text"> Aliquam erat volutpat. Aenean accumsan.</span>
-      <div class="tradition__btn-wrap">
-        <button class="tradition__btn">Read more  ></button>
+        <p class="tradition__first-text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="tradition__second-text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <span class="tradition__third-text">
+          Aliquam erat volutpat. Aenean accumsan.</span
+        >
+        <div class="tradition__btn-wrap">
+          <button class="tradition__btn">
+            Read more
+            <svg class="tradition__arrow" width="8px" height="12px">
+              <use href="img/svg/arrow.svg"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-    </div>
     </div>
     <ul class="tradition__list">
       <li class="tradition__item">
         <div class="tradition__icon-one">
-          <img class="tradition__icon" src="img/svg/cow-bucket.png" alt="cow-bucket">
+          <img
+            class="tradition__icon"
+            src="img/svg/cow-bucket.png"
+            alt="cow-bucket"
+          />
         </div>
-      <span id="count" class="tradition__number">0</span>
+        <span id="count" class="tradition__number">0</span>
         <p class="tradition__describe">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
       </li>
       <li class="tradition__item">
         <div class="tradition__icon-two">
-          <img class="tradition__icon" src="img/svg/apple-bucket.png" alt="apple-bucket">
+          <img
+            class="tradition__icon"
+            src="img/svg/apple-bucket.png"
+            alt="apple-bucket"
+          />
         </div>
         <div class="tradition__num-wrap">
-      <span id="number" class="tradition__number">0</span><p class="tradition__number">KG</p></div>
+          <span id="number" class="tradition__number">0</span>
+          <p class="tradition__number">KG</p>
+        </div>
         <p class="tradition__describe">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
       </li>
       <li class="tradition__item">
         <div class="tradition__icon-three">
-          <img class="tradition__icon" src="img/svg/candy.png" alt="candy">
+          <img class="tradition__icon" src="img/svg/candy.png" alt="candy" />
         </div>
-      <span id="numbers" class="tradition__number">0</span>
+        <span id="numbers" class="tradition__number">0</span>
         <p class="tradition__describe">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
@@ -61,23 +90,22 @@
   </div>
 </section>
 
-
 <script>
   function increaseNumber(id, endValue, increment) {
-  let current = 0;
-  const element = document.getElementById(id);
-  const interval = setInterval(function() {
-    current += increment;
-    element.textContent = current;
-    if (current >= endValue) {
-      clearInterval(interval);
-    }
-  }, 30);
-}
+    let current = 0;
+    const element = document.getElementById(id);
+    const interval = setInterval(function () {
+      current += increment;
+      element.textContent = current;
+      if (current >= endValue) {
+        clearInterval(interval);
+      }
+    }, 30);
+  }
 
-increaseNumber('count', 721, 5);
+  increaseNumber('count', 721, 5);
 
-increaseNumber('number', 16, 1);
+  increaseNumber('number', 16, 1);
 
-increaseNumber('numbers', 84, 1);
+  increaseNumber('numbers', 84, 1);
 </script>
