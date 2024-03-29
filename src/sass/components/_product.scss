@@ -4,7 +4,7 @@
 }
 
 .product__subtitle {
-  font-family: "Titan One", sans-serif;
+  font-family: 'Titan One', sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
@@ -15,7 +15,7 @@
 }
 
 .product__title {
-  font-family: "Titan One", sans-serif;
+  font-family: 'Titan One', sans-serif;
   font-weight: 400;
   font-size: 34px;
   letter-spacing: 0.04em;
@@ -26,7 +26,7 @@
 }
 
 .product__name {
-  font-family: "Titan One", sans-serif;
+  font-family: 'Titan One', sans-serif;
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.04em;
@@ -37,7 +37,7 @@
 }
 
 .product__title {
-  font-family: "Titan One", sans-serif;
+  font-family: 'Titan One', sans-serif;
   font-weight: 400;
   font-size: 34px;
   letter-spacing: 0.04em;
@@ -48,7 +48,7 @@
 }
 
 .product__name {
-  font-family: "Titan One", sans-serif;
+  font-family: 'Titan One', sans-serif;
   font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.04em;
@@ -64,7 +64,7 @@
 }
 
 .product__text {
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 176%;
@@ -222,11 +222,5 @@
   }
   .product__img {
     bottom: 370px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .product__item {
-    display: flex;
-    margin: 0 auto;
   }
 }
