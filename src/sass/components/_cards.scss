@@ -1,13 +1,18 @@
+
+.cards{
+  background-color: $secondaryBackgroundColor;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 82px;
+  background-color: $secondaryBackgroundColor;
+}
 .card {
   background-color: #ffffff;
   border-radius: 24px;
   box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
   padding: 43px 20px;
   width: 220px;
-}
-.cards{
-  padding-bottom: 82px;
-  background-color: $secondaryBackgroundColor;
 }
 .card__button{
   margin-top: 54px;
@@ -65,11 +70,8 @@
 }
 .card__first-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 0 auto;
-}
-.cards {
-  display: flex;
 }
 .card__city {
   font-weight: 500;
@@ -110,7 +112,6 @@
   line-height: 150%;
   color: $textColor;
   padding-bottom: 25px;
-  opacity: 0.7;
   border-bottom: 1px solid $borderColor;
 }
 .card__list-telephone {
@@ -128,6 +129,13 @@
   line-height: 150%;
   color: $textColor;
 }
+.card__first-list {
+  display: flex;
+  flex-direction: column;
+}
+.card__citys {
+  margin-bottom: 10px;
+}
 .card__citys {
   margin-bottom: 14px;
   margin-top: 25px;
@@ -135,6 +143,54 @@
   font-size: 12px;
   line-height: 186%;
   letter-spacing: 0.04em;
+  color: $primaryTextColor;
+}
+.card:not(:last-child) {
+  margin-bottom: 20px;
+}
+.card__first-button {
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 22px;
+  padding-left: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: none;
+  background-color: $hoverColor;
+  color: $secondaryTextColor;
+  padding-right: 24px;
+  margin-bottom: 10px;
+}
+.card__second-button:hover {
+  background-color: $secondaryHoverColor;
+}
+.card__second-button {
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 22px;
+  padding-left: 31px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: none;
+  background-color: $secondaryTextColor;
+  color: $hoverColor;
+  padding-right: 48px;
+  transition-duration: 450ms;
+}
+.card__button {
+  margin-top: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .card {
+  padding: 50px 31px;
+  width: 220px;
+  }
+  .card:not(:last-child){
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -146,6 +202,27 @@
   .card__pinks {
     color: $firstCardColor;
   }
+  .card__button{
+    display: flex;
+    flex-direction: row;
+    margin-top: 81px;
+  }
+  .card__first-button{
+    margin-right: 14.5px;
+    margin-bottom: 0px;
+
+  }
+  .card__pink {
+    color: $firstCardColor;
+  }
+  .card__text{
+    width: 145px;
+    font-size: 14px;
+  }
+  .card__first-list{
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
   .card__pink {
     color: $firstCardColor;
   }
@@ -165,12 +242,30 @@
     background-color: $secondCardColor;
     color: $secondaryTextColor;
   }
+  .card__list{
+    width: 220px;
+  }
   .card__title {
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: $thirdCardColor;
     color: $secondaryTextColor;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .card{
+    width: 330px;
+   padding: 51px 43px;
+  }
+  .card:not(:last-child){
+    margin-right: 31px;
+  }
+  .card__text{
+    width: 243px;
+    font-size: 12px;
+  }
+}
   .card__text {
     opacity: 0.7;
   }
