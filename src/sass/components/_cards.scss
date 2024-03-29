@@ -1,8 +1,11 @@
+
 .cards{
   background-color: $secondaryBackgroundColor;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 82px;
+  background-color: $secondaryBackgroundColor;
 }
 .card {
   background-color: #ffffff;
@@ -10,6 +13,46 @@
   box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
   padding: 43px 20px;
   width: 220px;
+}
+.card__button{
+  margin-top: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card__first-button{
+  padding-left: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 22px;
+  background-color: $hoverColor;
+  border: none;
+  color: $secondaryTextColor;
+}
+.card__svg-first{
+  margin-left: 12px;
+  fill: $secondaryTextColor;
+}
+.card__second-button{
+  margin-top: 10px;
+  padding-left: 32px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 31px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 22px;
+  background-color: $secondaryTextColor;
+  border: none;
+  color: $hoverColor;
+}
+.card__svg-second{
+  margin-left: 12px;
+  fill: $hoverColor;
 }
 .card__city {
   margin-bottom: 3px;
@@ -92,6 +135,9 @@
 }
 .card__citys {
   margin-bottom: 10px;
+}
+.card__citys {
+  margin-bottom: 14px;
   margin-top: 25px;
   font-weight: 500;
   font-size: 12px;
@@ -145,6 +191,13 @@
   }
   .card:not(:last-child){
     margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    border-radius: 24px;
+    margin: 0;
+    margin-bottom: 20px;
   }
   .card__pinks {
     color: $firstCardColor;
@@ -170,6 +223,18 @@
     flex-direction: row;
     align-items: start;
     justify-content: space-around;
+  .card__pink {
+    color: $firstCardColor;
+  }
+  .card__city {
+    margin-bottom: 3px;
+  }
+  .card__citys {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
   }
   .card__span {
     margin-bottom: 30px;
@@ -200,4 +265,22 @@
     width: 243px;
     font-size: 12px;
   }
+}
+  .card__text {
+    opacity: 0.7;
+  }
+  .card__telephone {
+    color: black;
+    opacity: 0.7;
+  }
+  .card__email {
+    color: black;
+    opacity: 0.7;
+  }
+}
+
+
+@media screen and (max-width: 1200px){
+
+  
 }

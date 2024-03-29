@@ -12,7 +12,7 @@
     background-image: url('../img/tradition/background@2x.png');
   }
   &__subtitle {
-    font-family: "Titan One", sans-serif;
+    font-family: 'Titan One', sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-transform: uppercase;
@@ -23,7 +23,7 @@
     justify-content: center;
   }
   &__title {
-    font-family: "Titan One", sans-serif;
+    font-family: 'Titan One', sans-serif;
     font-weight: 400;
     font-size: 34px;
     letter-spacing: 0.04em;
@@ -32,7 +32,7 @@
     color: $hoverColor;
     padding-bottom: 26px;
   }
-  &__wrap{
+  &__wrap {
     margin: 0 auto;
   }
   &__image {
@@ -40,7 +40,7 @@
     height: 279px;
     margin-bottom: 46px;
   }
-  &__text-wrap{
+  &__text-wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@
     font-size: 12px;
     line-height: 162%;
     color: $textColor;
-     text-align: left;
+    text-align: left;
     max-width: 220px;
     padding-bottom: 15px;
   }
@@ -78,6 +78,8 @@
     margin-top: 17px;
   }
   &__btn {
+    display: flex;
+    align-items: center;
     background-color: $secondaryTextColor;
     border: none;
     border-radius: 22px;
@@ -89,11 +91,14 @@
     width: 176px;
     height: 44px;
     cursor: pointer;
-     transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-    &:hover{
-      background-color: $hoverColor;
-      color: $secondaryTextColor;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    &:hover {
+      background-color: $secondaryHoverColor;
     }
+  }
+  &__arrow{
+     transform: rotate(90deg);
+    margin-left: 13px;
   }
   &__list {
     display: flex;
@@ -105,18 +110,18 @@
     height: 50px;
     margin-top: 38px;
   }
-  &__icon-two{
+  &__icon-two {
     width: 50px;
     height: 50px;
     margin-top: 38px;
   }
-  &__icon-three{
+  &__icon-three {
     width: 44px;
-height: 50px;
-margin-top: 38px;
+    height: 50px;
+    margin-top: 38px;
   }
   &__number {
-    font-family: "Titan One", sans-serif;
+    font-family: 'Titan One', sans-serif;
     font-weight: 400;
     font-size: 36px;
     letter-spacing: 0.04em;
@@ -153,7 +158,7 @@ margin-top: 38px;
       width: 340px;
       height: 339px;
     }
-    &__text-wrap{
+    &__text-wrap {
       align-items: normal;
     }
     &__first-text {
@@ -203,32 +208,33 @@ margin-top: 38px;
     &__subtitle {
       font-size: 30px;
     }
-    &__title{
+    &__title {
       font-size: 58px;
       padding-bottom: 106px;
     }
-&__image{
-  width: 516px;
-height: 516px;
-}
-&__first-text{
-  font-size: 16px;
-  max-width: 463px;
-}
-&__second-text, &__third-text{
-  line-height: 194%;
-}
-&__number{
-  font-size: 58px;
-  padding-top: 40px;
-}
-&__describe{
-  font-size: 16px;
-line-height: 176%;
-max-width: 330px;
-}
+    &__image {
+      width: 516px;
+      height: 516px;
+    }
+    &__first-text {
+      font-size: 16px;
+      max-width: 463px;
+    }
+    &__second-text,
+    &__third-text {
+      line-height: 194%;
+    }
+    &__number {
+      font-size: 58px;
+      padding-top: 40px;
+    }
+    &__describe {
+      font-size: 16px;
+      line-height: 176%;
+      max-width: 330px;
+    }
   }
 }
-.tradition__num-wrap{
+.tradition__num-wrap {
   display: flex;
 }

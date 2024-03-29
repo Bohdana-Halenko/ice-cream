@@ -55,6 +55,10 @@ body {
     max-width: 1200px;
   }
 }
+.header {
+  background-color: pink;
+}
+
 .product {
   padding-top: 121px;
   padding-bottom: 96px;
@@ -133,18 +137,24 @@ body {
 }
 
 .product__cream {
+  margin-top: 130px;
+  position: relative;
   background-color: #ffb8ca;
   border-radius: 24px;
   width: 280px;
 }
 
 .product__coffee {
+  margin-top: 130px;
+  position: relative;
   background-color: #f0d1a5;
   border-radius: 24px;
   width: 280px;
 }
 
 .product__milkshakes {
+  margin-top: 129px;
+  position: relative;
   background-color: #c2e297;
   border-radius: 24px;
   width: 280px;
@@ -164,14 +174,13 @@ body {
 }
 
 .product__item {
-  display: block;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .product__button {
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 120px;
+  padding-bottom: 41px;
+  margin: 0 auto;
   cursor: pointer;
 }
 
@@ -185,9 +194,6 @@ body {
   .product__milkshakes {
     width: 220px;
   }
-  .product__button {
-    padding-left: 90px;
-  }
   .product__subtitle {
     font-size: 26px;
   }
@@ -200,24 +206,28 @@ body {
     align-items: center;
   }
   .product__name {
+    padding-top: 140px;
     font-size: 20px;
   }
   .product__text {
     font-size: 14px;
   }
   .product__img {
+    bottom: 450px;
     display: flex;
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
   .product__coffee {
+    margin-top: 150px;
     width: 329px;
   }
   .product__cream {
     width: 329px;
   }
   .product__milkshakes {
+    margin-top: 150px;
     width: 329px;
   }
   .product__name {
@@ -229,11 +239,9 @@ body {
   .product__subtitle {
     font-size: 30px;
   }
-  .product__button {
-    padding-left: 145px;
-  }
   .product__item {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -241,7 +249,6 @@ body {
     background-color: #ffb8ca;
     border-radius: 24px;
     width: 280px;
-    margin-bottom: 130px;
     margin-top: 144px;
     position: relative;
   }
@@ -267,7 +274,6 @@ body {
   }
   .product__item {
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
   .product__button {
@@ -280,7 +286,7 @@ body {
 @media screen and (min-width: 768px) {
   .product__item {
     display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
   }
 }
 .tradition {
@@ -364,6 +370,8 @@ body {
   margin-top: 17px;
 }
 .tradition__btn {
+  display: flex;
+  align-items: center;
   background-color: #fff;
   border: none;
   border-radius: 22px;
@@ -378,8 +386,11 @@ body {
   transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 .tradition__btn:hover {
-  background-color: #d41443;
-  color: #fff;
+  background-color: #ECEBEB;
+}
+.tradition__arrow {
+  fill: #d41443;
+  margin-left: 13px;
 }
 .tradition__list {
   display: flex;
@@ -722,6 +733,56 @@ body {
   width: 220px;
 }
 
+.cards {
+  padding-bottom: 82px;
+  background-color: #fff5f6;
+}
+
+.card__button {
+  margin-top: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__first-button {
+  padding-left: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 22px;
+  background-color: #d41443;
+  border: none;
+  color: #fff;
+}
+
+.card__svg-first {
+  margin-left: 12px;
+  fill: #fff;
+}
+
+.card__second-button {
+  margin-top: 10px;
+  padding-left: 32px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 31px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 22px;
+  background-color: #fff;
+  border: none;
+  color: #d41443;
+}
+
+.card__svg-second {
+  margin-left: 12px;
+  fill: #d41443;
+}
+
 .card__city {
   margin-bottom: 3px;
 }
@@ -842,6 +903,23 @@ body {
   }
   .card__pinks {
     margin-bottom: 16px;
+  }
+.card__citys {
+  margin-bottom: 14px;
+  margin-top: 25px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    border-radius: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .card__pinks {
     color: #ffb8ca;
   }
   .card__pink {
@@ -857,6 +935,10 @@ body {
   .card__first-list {
     display: flex;
     justify-content: space-between;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
   }
   .card__span {
     margin-bottom: 30px;
@@ -878,15 +960,6 @@ body {
     height: 65px;
     width: 145px;
     margin-bottom: 60px;
-    opacity: 0.7;
-  }
-  .card__telephone {
-    color: black;
-    opacity: 0.7;
-  }
-  .card__email {
-    color: black;
-    opacity: 0.7;
   }
 }
 .footer {
