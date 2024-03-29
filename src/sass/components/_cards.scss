@@ -64,6 +64,7 @@
   line-height: 186%;
 }
 .card__list-pink {
+  width: 145px;
   margin-bottom: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid $borderColor;
@@ -206,8 +207,14 @@
   }
   .card__button {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: end;
     margin-top: 81px;
+  }
+  .card__first-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -221,5 +228,8 @@
   .card__text {
     width: 243px;
     font-size: 12px;
+  }
+  .card__list-pink {
+    width: 243px;
   }
 }
