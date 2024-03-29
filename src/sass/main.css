@@ -544,7 +544,7 @@ body {
     bottom: 105px;
   }
   .photo__wrap {
-    width: 786px;
+    width: 768px;
     height: 264px;
   }
 }
@@ -659,7 +659,7 @@ body {
 }
 
 .reviews {
-  padding-bottom: 86px;
+  padding-bottom: 170px;
 }
 
 @media screen and (min-width: 768px) {
@@ -688,7 +688,7 @@ body {
     top: 25px;
   }
   .reviews {
-    padding-bottom: 119px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -718,7 +718,7 @@ body {
     top: 25px;
   }
   .reviews {
-    padding-bottom: 132px;
+    padding-bottom: 234px;
   }
 }
 .cards {
@@ -728,6 +728,8 @@ body {
   flex-direction: column;
   padding-bottom: 82px;
   background-color: #fff5f6;
+  position: relative;
+  height: 1590px;
 }
 
 .card {
@@ -740,7 +742,7 @@ body {
 }
 
 .card__button {
-  margin-top: 54px;
+  margin-top: 1490px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -806,6 +808,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  position: absolute;
+  top: -84px;
 }
 
 .card__city {
@@ -898,14 +902,6 @@ body {
   color: #ffb8ca;
 }
 
-.card__button {
-  margin-top: 54px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .card__first-button {
   margin-right: 14.5px;
   margin-bottom: 0px;
@@ -943,10 +939,6 @@ body {
   color: #fff;
 }
 
-.card__list {
-  width: 220px;
-}
-
 .card__title {
   margin-bottom: 30px;
   border-radius: 4px;
@@ -955,6 +947,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .cards {
+    height: 600px;
+  }
   .card {
     padding: 50px 31px;
     width: 220px;
@@ -966,12 +961,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    left: 50px;
+    top: -78px;
   }
   .card__button {
     display: flex;
     flex-direction: row;
     align-items: end;
-    margin-top: 81px;
+    margin-top: 520px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -988,6 +985,13 @@ body {
   }
   .card__list-pink {
     width: 243px;
+  }
+  .card__first-list {
+    left: 80px;
+    top: -102px;
+  }
+  .card__button {
+    margin-top: 450px;
   }
 }
 .footer {

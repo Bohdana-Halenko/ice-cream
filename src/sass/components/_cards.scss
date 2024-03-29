@@ -5,6 +5,8 @@
   flex-direction: column;
   padding-bottom: 82px;
   background-color: $secondaryBackgroundColor;
+  position: relative;
+  height: 1590px;
 }
 .card {
   background-color: #ffffff;
@@ -15,7 +17,7 @@
   margin-bottom: 20px;
 }
 .card__button {
-  margin-top: 54px;
+  margin-top: 1490px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +75,8 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  position: absolute;
+  top: -84px;
 }
 .card__city {
   font-weight: 500;
@@ -151,13 +155,13 @@
 .card__pinks {
   color: $firstCardColor;
 }
-.card__button {
-  margin-top: 54px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+// .card__button {
+//   margin-top: 54px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+// }
 .card__first-button {
   margin-right: 14.5px;
   margin-bottom: 0px;
@@ -188,9 +192,9 @@
   background-color: $secondCardColor;
   color: $secondaryTextColor;
 }
-.card__list {
-  width: 220px;
-}
+// .card__list {
+//   width: 220px;
+// }
 .card__title {
   margin-bottom: 30px;
   border-radius: 4px;
@@ -198,6 +202,9 @@
   color: $secondaryTextColor;
 }
 @media screen and (min-width: 768px) {
+  .cards{
+    height: 600px;
+  }
   .card {
     padding: 50px 31px;
     width: 220px;
@@ -209,12 +216,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    left: 50px;
+    top: -78px;
   }
   .card__button {
     display: flex;
     flex-direction: row;
     align-items: end;
-    margin-top: 81px;
+    margin-top: 520px;
   }
 
 }
@@ -232,5 +241,12 @@
   }
   .card__list-pink {
     width: 243px;
+  }
+  .card__first-list{
+    left: 80px;
+    top: -102px;
+  }
+  .card__button{
+    margin-top: 450px;
   }
 }
