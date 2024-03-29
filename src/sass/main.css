@@ -962,16 +962,16 @@ body {
   .card:not(:last-child) {
     margin-right: 20px;
   }
+  .card__first-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
   .card__button {
     display: flex;
     flex-direction: row;
     align-items: end;
     margin-top: 81px;
-  }
-  .card__first-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
   }
 }
 @media screen and (min-width: 1200px) {
