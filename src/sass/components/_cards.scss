@@ -17,7 +17,7 @@
   margin-bottom: 20px;
 }
 .card__button {
-  margin-top: 1490px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,8 +75,8 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  position: absolute;
-  top: -84px;
+  // position: absolute;
+  // top: -84px;
 }
 .card__city {
   font-weight: 500;
@@ -203,7 +203,7 @@
 }
 @media screen and (min-width: 768px) {
   .cards{
-    height: 600px;
+    height: 500px;
   }
   .card {
     padding: 50px 31px;
@@ -216,14 +216,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    left: 50px;
-    top: -78px;
+    // left: 50px;
+    // top: -78px;
   }
   .card__button {
     display: flex;
     flex-direction: row;
     align-items: end;
-    margin-top: 520px;
+    margin-top: 50px;
   }
 
 }
@@ -242,11 +242,11 @@
   .card__list-pink {
     width: 243px;
   }
-  .card__first-list{
-    left: 80px;
-    top: -102px;
-  }
+  // .card__first-list{
+  //   left: 80px;
+  //   top: -102px;
+  // }
   .card__button{
-    margin-top: 450px;
+    margin-top: 50px;
   }
 }
