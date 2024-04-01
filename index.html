@@ -13,8 +13,8 @@
     />
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script type="module" crossorigin src="/ice-cream/assets/index-3360d329.js"></script>
-    <link rel="stylesheet" href="/ice-cream/assets/index-46fd3d1e.css">
+    <script type="module" crossorigin src="/ice-cream/assets/index-eb5c35e4.js"></script>
+    <link rel="stylesheet" href="/ice-cream/assets/index-2e359983.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -61,7 +61,7 @@
     <button class="header__button">
       Buy now
       <svg class="header__icon" width="6" height="10">
-        <use href="/ice-cream/assets/symbol-defs-baaa04e7.svg#icon-close-menu"></use>
+        <use href="/ice-cream/assets/symbol-defs-457c64a6.svg#icon-close-menu"></use>
       </svg>
     </button>
     <div class="header__text-button">
@@ -267,15 +267,44 @@
           Aliquam erat volutpat. Aenean accumsan.</span
         >
         <div data-aos="fade-left" class="tradition__btn-wrap">
-          <button class="tradition__btn">
+          <button class="tradition__btn" type="button" data-modal-open>
             Read more
             <svg class="tradition__arrow" width="8px" height="12px">
-              <use href="/ice-cream/assets/symbol-defs-baaa04e7.svg#icon-arrow"></use>
+              <use href="/ice-cream/assets/symbol-defs-457c64a6.svg#icon-arrow"></use>
             </svg>
           </button>
         </div>
       </div>
     </div>
+    <!--Modal window-->
+    <div class="backdrop is-hidden" data-modal> 
+      <div class="modal">
+        <div class="modal__btn">
+          <button data-modal-close type="button" class="modal__close-button">
+               <svg class="modal__icon" width="18" height="18">
+                  <use href="./img/svg/symbol-defs.svg#icon-cross"></use>
+              </svg> 
+          </button>
+        </div>
+        <div class="modal__wrap">
+          <div class="modal__img">
+            <picture class="modal__cow">
+              <source
+                srcset="/ice-cream/assets/cow@1x-302a4766.png 1x, /ice-cream/assets/cow@2x-bfc32ac3.png 2x"
+                type="image/png"
+              />
+              <source
+                srcset="/ice-cream/assets/cow@1x-caa4099c.webp 1x, /ice-cream/assets/cow@2x-f1c8a463.webp 2x"
+                type="image/webp"
+              />
+              <img src="../img/tradition/cow@1x.png" alt="cow" />
+            </picture>
+           </div>
+           <h2 class="modal__title">how it’s made?</h2>
+           <p class="modal__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla. Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
+      </div>
+  </div>
+  </div>
     <ul class="tradition__list">
       <li class="tradition__item">
         <div class="tradition__icon-one">
@@ -388,17 +417,17 @@
       <ul class="reviews__icon">
         <li class="reviews__icon-item">
           <svg class="home" width="13px" height="12px">
-            <use href="/ice-cream/assets/symbol-defs-baaa04e7.svg#icon-reveiws-home"></use>
+            <use href="/ice-cream/assets/symbol-defs-457c64a6.svg#icon-reveiws-home"></use>
           </svg>
         </li>
         <li class="reviews__icon-item">
           <svg class="point" width="12px" height="12px">
-            <use href="/ice-cream/assets/symbol-defs-baaa04e7.svg#icon-reviews-point"></use>
+            <use href="/ice-cream/assets/symbol-defs-457c64a6.svg#icon-reviews-point"></use>
           </svg>
         </li>
         <li class="reviews__icon-item">
           <svg class="point" width="12px" height="12px">
-            <use href="/ice-cream/assets/symbol-defs-baaa04e7.svg#icon-reviews-point"></use>
+            <use href="/ice-cream/assets/symbol-defs-457c64a6.svg#icon-reviews-point"></use>
           </svg>
         </li>
       </ul>
@@ -518,7 +547,7 @@
         <button type="button" class="card__first-button">
           Our Locations
           <svg class="card__svg-first" width="6" height="10">
-            <use href="/ice-cream/assets/symbol-defs-baaa04e7.svg#icon-arrow-icon"></use>
+            <use href="/ice-cream/assets/symbol-defs-457c64a6.svg#icon-arrow-icon"></use>
           </svg>
         </button>
       </li>
@@ -526,7 +555,7 @@
         <button type="button" class="card__second-button">
           Franchise
           <svg class="card__svg-second" width="6" height="10">
-            <use href="/ice-cream/assets/symbol-defs-baaa04e7.svg#icon-arrow-icon"></use>
+            <use href="/ice-cream/assets/symbol-defs-457c64a6.svg#icon-arrow-icon"></use>
           </svg>
         </button>
       </li>
@@ -546,21 +575,21 @@
           <li class="footer__item">
             <a class="footer__link" href="https://github.com/Bnadraga">
               <svg class="footer__svg" width="25px" height="25px">
-                <use href="/ice-cream/assets/symbol-defs-baaa04e7.svg#icon-github-icon"></use>
+                <use href="/ice-cream/assets/symbol-defs-457c64a6.svg#icon-github-icon"></use>
               </svg>
             </a>
           </li>
           <li class="footer__item">
             <a class="footer__link" href="https://t.me/bodyan_ya">
               <svg class="footer__svg" width="25px" height="20px">
-                <use href="/ice-cream/assets/symbol-defs-baaa04e7.svg#icon-telegram-icon"></use>
+                <use href="/ice-cream/assets/symbol-defs-457c64a6.svg#icon-telegram-icon"></use>
               </svg>
             </a>
           </li>
           <li class="footer__item">
             <a class="footer__link" href="#">
               <svg class="footer__svg" width="14px" height="25px">
-                <use href="/ice-cream/assets/symbol-defs-baaa04e7.svg#icon-facebook-icon"></use>
+                <use href="/ice-cream/assets/symbol-defs-457c64a6.svg#icon-facebook-icon"></use>
               </svg>
             </a>
           </li>
