@@ -38,7 +38,7 @@
           Aliquam erat volutpat. Aenean accumsan.</span
         >
         <div data-aos="fade-left" class="tradition__btn-wrap">
-          <button class="tradition__btn">
+          <button class="tradition__btn" type="button" data-modal-open>
             Read more
             <svg class="tradition__arrow" width="8px" height="12px">
               <use href="./img/symbol-defs.svg#icon-arrow"></use>
@@ -47,6 +47,41 @@
         </div>
       </div>
     </div>
+    <!--Modal window-->
+    <div class="backdrop is-hidden" data-modal> 
+      <div class="modal">
+        <div class="modal__btn">
+          <button data-modal-close type="button" class="modal__close-button">
+               <svg class="modal__icon" width="18" height="18">
+                  <use href="./img/svg/symbol-defs.svg#icon-cross"></use>
+              </svg> 
+          </button>
+        </div>
+        <div class="modal__wrap">
+          <div class="modal__img">
+            <picture class="modal__cow">
+              <source
+                srcset="
+                  ./img/tradition/cow@1x.png 1x,
+                  ./img/tradition/cow@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./img/tradition/cow@1x.webp 1x,
+                  ./img/tradition/cow@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img src="../img/tradition/cow@1x.png" alt="cow" />
+            </picture>
+           </div>
+           <h2 class="modal__title">how it’s made?</h2>
+           <p class="modal__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla. Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
+      </div>
+  </div>
+  </div>
     <ul class="tradition__list">
       <li class="tradition__item">
         <div class="tradition__icon-one">
