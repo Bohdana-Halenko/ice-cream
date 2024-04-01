@@ -50,80 +50,35 @@
     <!--Modal window-->
     <div class="backdrop is-hidden" data-modal> 
       <div class="modal">
+        <div class="modal__btn">
           <button data-modal-close type="button" class="modal__close-button">
                <svg class="modal__icon" width="18" height="18">
                   <use href="./img/svg/symbol-defs.svg#icon-cross"></use>
               </svg> 
           </button>
-          <ul class="modal__list">
-            <li class="modal__item">
-              <h2 class="modal__title">Ingredients</h2>
-              <ul class="modal__ingredients">
-                <li class="modal__ingredients-item">
-                  <svg class="modal__arrow">
-                    <use href="./img/symbol-defs.svg#icon-arrow"></use>
-                  </svg>
-                  <a href="#" class="modal__ingredients-link">Ice</a>
-                </li>
-                <li class="modal__ingredients-item">
-                  <svg class="modal__arrow">
-                    <use href="./img/symbol-defs.svg#icon-arrow"></use>
-                  </svg>
-                  <a href="#" class="modal__ingredients-link">Milk</a>
-                </li>
-                <li class="modal__ingredients-item">
-                  <svg class="modal__arrow">
-                    <use href="./img/symbol-defs.svg#icon-arrow"></use>
-                  </svg>
-                  <a href="#" class="modal__ingredients-link">Water</a>
-                </li>
-                <li class="modal__ingredients-item">
-                  <svg class="modal__arrow">
-                    <use href="./img/symbol-defs.svg#icon-arrow"></use>
-                  </svg>
-                  <a href="#" class="modal__ingredients-link">Sugar</a>
-                </li>
-                <li class="modal__ingredients-item">
-                  <svg class="modal__arrow">
-                    <use href="./img/symbol-defs.svg#icon-arrow"></use>
-                  </svg>
-                  <a href="#" class="modal__ingredients-link">Milk protein</a>
-                </li>
-                <li class="modal__ingredients-item">
-                  <svg class="modal__arrow">
-                    <use href="./img/symbol-defs.svg#icon-arrow"></use>
-                  </svg>
-                  <a href="#" class="modal__ingredients-link">Air</a>
-                </li>
-                <li class="modal__ingredients-item">
-                  <svg class="modal__arrow">
-                    <use href="./img/symbol-defs.svg#icon-arrow"></use>
-                  </svg>
-                  <a href="#" class="modal__ingredients-link">Chocolate / Fruits / Cream</a>
-                </li>
-              </ul>
-            </li>
-            <li class="modal__item">
-              <h2 class="modal__title">Process</h2>
-              <ol class="modal__process-list">
-                <li class="modal__process-item">
-                  <p class="modal__process-text">Stir milk, cream, and sugar in a saucepan over low heat until sugar has dissolved. Heat just until the mixture is hot and a small ring of foam appears around the edge.</p>
-                </li>
-                <li class="modal__process-item">
-                  <p class="modal__process-text">Transfer cream mixture to a pourable container such as a large measuring cup. Stir in vanilla extract and chill mix thoroughly, at least 2 hours. (Overnight is best.)</p>
-                </li>
-                <li class="modal__process-item">
-                  <p class="modal__process-text">Pour cold ice cream mix into an ice cream maker, turn on the machine, and churn according to manufacturer's directions, 20 to 25 minutes.</p>
-                </li>
-                <li class="modal__process-item">
-                  <p class="modal__process-text">When ice cream is softly frozen, serve immediately or place a piece of plastic wrap directly on the ice cream and place in the freezer to ripen, 2 to 3 hours.</p>
-                </li>
-              </ol>
-            </li>
-          </ul>
-          <div class="modal__btn-wrap">
-            <button data-modal-close type="button" class="modal__btn">Thank you</button>
-          </div>
+        </div>
+        <div class="modal__wrap">
+          <div class="modal__img">
+            <picture class="modal__cow">
+              <source
+                srcset="
+                  ./img/tradition/cow@1x.png 1x,
+                  ./img/tradition/cow@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./img/tradition/cow@1x.webp 1x,
+                  ./img/tradition/cow@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img src="../img/tradition/cow@1x.png" alt="cow" />
+            </picture>
+           </div>
+           <h2 class="modal__title">how it’s made?</h2>
+           <p class="modal__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla. Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
       </div>
   </div>
   </div>
