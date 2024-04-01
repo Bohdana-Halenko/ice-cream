@@ -2,47 +2,50 @@
   <div class="header__container">
     <div class="header__logo">
       <picture class="logo">
-        <source
-          srcset="img/header/logo@1x.png 1x, img/header/logo@2x.png 2x"
-          type="image/png"
-        />
-        <source
-          srcset="img/header/logo@1x.webp 1x, img/header/logo@2x.webp 2x"
-          type="image/webp"
-        />
-        <img src="../img/header/logo@1x.png" alt="logo" />
+        <source srcset="img/header/logo@1x.png 1x, img/header/logo@2x.png 2x"
+                type="image/png" />
+        <source srcset="img/header/logo@1x.webp 1x, img/header/logo@2x.webp 2x"
+                type="image/webp" />
+        <img src="../img/header/logo@1x.png"
+             alt="logo" />
       </picture>
-      <svg class="header__burger"
-           width="20px"
-           height="12px">
-        <use href="./../img/symbol-defs.svg#icon-burger-open">
-        </use>
-      </svg>
+      <button class="header__burger-button js-open-menu">
+        <svg class="header__burger"
+             width="20px"
+             height="12px"
+             aria-expanded="false"
+             aria-controls="mobile-menu">
+          <use href="/img/symbol-defs.svg#icon-burger-open">
+          </use>
+        </svg>
+      </button>
     </div>
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item">
-          <a class="header__nav-link" href="#">Home</a>
+          <a class="header__nav-link"
+             href="#">Home</a>
         </li>
         <li class="header__nav-item">
-          <a class="header__nav-link" href="#">About</a>
+          <a class="header__nav-link"
+             href="#">About</a>
         </li>
         <li class="header__nav-item">
-          <a class="header__nav-link" href="#">How it`s made?</a>
+          <a class="header__nav-link"
+             href="#">How it`s made?</a>
         </li>
         <li class="header__nav-item">
-          <a class="header__nav-link" href="#">Our products</a>
+          <a class="header__nav-link"
+             href="#">Our products</a>
         </li>
         <li class="header__nav-item">
-          <a class="header__nav-link" href="#">Contract</a>
+          <a class="header__nav-link"
+             href="#">Contact</a>
         </li>
       </ul>
     </nav>
     <button class="header__button">
-      Buy now
-      <svg class="header__icon" width="6" height="10">
-        <use href="./img/symbol-defs.svg#icon-close-menu"></use>
-      </svg>
+      Buy now  >
     </button>
     <div class="header__text-button">
       <h1 class="header__white-text">
@@ -51,7 +54,40 @@
       <button class="header__red-button">Products</button>
       <button class="header__white-button">How it’s made?</button>
     </div>
-    
+    <div class="menu-container js-menu-container" 
+         id="mobile-menu" >
+      <button class="menu-toggle js-close-menu"  >
+        <svg class="mobile-menu__icon-close"
+             width="16" height="16">
+          <use href="./img/symbol-defs-menu.svg#icon-burger-close"></use>
+        </svg>
+      </button>
+        <div class="mobile__button-wraper">
+          <button class="mobile__button">Buy now ></button>
+        </div>
+      <ul class="mobile__list">
+        <li class="mobile__item">
+          <a href="#"
+             class="mobile__link">Home</a>
+        </li>
+        <li class="mobile__item">
+          <a href="#"
+             class="mobile__link">About</a>
+        </li>
+        <li class="mobile__item">
+          <a href="#"
+             class="mobile__link">How it`s made?</a>
+        </li>
+        <li class="mobile__item">
+          <a href="#"
+             class="mobile__link">Our products</a>
+        </li>
+        <li class="mobile__item">
+          <a href="#"
+             class="mobile__link">Contact</a>
+        </li>
+      </ul>
+    </div>
     <div class="header__desktop">
       <ul class="header__number-list">
         <li class="header__number-item">
@@ -96,6 +132,7 @@
                alt="girl" />
         </picture>
       </div>
-      </div>
     </div>
+  </div>
+  <script src="../js/mobile.js"></script>
 </header>
