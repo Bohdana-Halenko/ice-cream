@@ -7,11 +7,20 @@
     </picture>
     <ul class="reviews__item">
       <li class="reviews__list">
-        <img
-          class="reviews__background-img"
-          src="../img/reviews/background.png"
-          alt="background"
-        />
+        <picture class="tradition__cow">
+          <source
+            srcset="
+              ./img/reviews/background@1x.png 1x,
+              ./img/reviews/background@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="reviews__background-img"
+            src="../img/reviews/background@1x.png"
+            alt="background"
+          />
+        </picture>
         <p class="reviews__text">
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
@@ -20,11 +29,11 @@
       </li>
     </ul>
     <div class="reviews__wrap-second">
-      <img
-        class="three-point"
-        src="../img/svg/three-point.png"
-        alt="three-point"
-      />
+      <div class="reviews__three-list">
+        <div class="reviews__three-point"></div>
+        <div class="reviews__three-point"></div>
+        <div class="reviews__three-point"></div>
+      </div>
       <p class="reviews__wrap-text">Emily, Los Angeles</p>
       <ul class="reviews__icon">
         <li class="reviews__icon-item">

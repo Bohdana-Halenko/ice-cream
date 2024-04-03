@@ -22,6 +22,18 @@
   margin-top: 50px;
   margin: 0 auto;
 }
+.reviews__three-point{
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #D31342;
+}
+.reviews__three-point:not(:last-child){
+  margin-right: 10px;
+}
+.reviews__three-list{
+  display: flex;
+}
 .reviews__background-img {
   position: relative;
   left: 110px;
