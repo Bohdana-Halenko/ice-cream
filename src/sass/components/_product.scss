@@ -82,6 +82,22 @@
   border-radius: 24px;
   width: 280px;
 }
+.product__cream:hover{
+  animation-name: chCream;
+  animation-duration: 450ms;
+}
+
+@keyframes chCream{
+  0%{
+    rotate: 0deg;
+  }
+  50%{
+    rotate: 180deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
 
 .product__coffee {
   margin-top: 130px;
@@ -90,6 +106,10 @@
   border-radius: 24px;
   width: 280px;
 }
+.product__coffee:hover{
+  animation-name: chCream;
+  animation-duration: 450ms;
+}
 
 .product__milkshakes {
   margin-top: 129px;
@@ -97,6 +117,10 @@
   background-color: #c2e297;
   border-radius: 24px;
   width: 280px;
+}
+.product__milkshakes:hover{
+  animation-name: chCream;
+  animation-duration: 450ms;
 }
 
 .product__link {
