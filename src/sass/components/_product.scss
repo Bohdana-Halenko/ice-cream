@@ -106,6 +106,9 @@
 
 .product__item {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product__button {
@@ -151,6 +154,7 @@
   .product__item {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
   }
   .product__name {
