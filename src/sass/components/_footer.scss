@@ -3,21 +3,12 @@
   background-color: $secondaryBackgroundColor;
 }
 .footer__text {
-  font-family: 'Titan One', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: $firstCardColor;
+  @include spanmb;
   width: 218px;
   margin-bottom: 20px;
 }
 .footer__title {
-  font-family: 'Titan One', sans-serif;
-  font-weight: 400;
-  font-size: 34px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $hoverColor;
+  @include titlemb;
   width: 165px;
   margin-bottom: 43px;
 }
@@ -105,8 +96,7 @@
   }
   .footer__text {
     margin-bottom: 16px;
-    font-size: 26px;
-    letter-spacing: 0.04em;
+    @include spantb;
     width: 340px;
   }
   .footer__rights-text {
@@ -119,8 +109,7 @@
     padding-bottom: 25px;
   }
   .footer__title {
-    font-size: 48px;
-    letter-spacing: 0.06em;
+    @include titletb;
     margin-bottom: 91px;
   }
   .footer__wrap-text {
@@ -131,7 +120,7 @@
 @media screen and (min-width: 1200px) {
   .footer__text {
     margin-bottom: 15px;
-    font-size: 30px;
+    @include spanpc;
     width: 472px;
   }
   .footer__list {
@@ -142,7 +131,7 @@
     padding-bottom: 11px;
   }
   .footer__title {
-    font-size: 58px;
+    @include titlepc;
     margin-bottom: 97px;
     width: 500px;
   }

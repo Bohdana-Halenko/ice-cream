@@ -12,24 +12,13 @@
     background-image: url('../img/tradition/background@2x.png');
   }
   &__subtitle {
-    font-family: 'Titan One', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ffa5ba;
+    @include spanmb;
     padding-bottom: 15px;
     display: flex;
     justify-content: center;
   }
   &__title {
-    font-family: 'Titan One', sans-serif;
-    font-weight: 400;
-    font-size: 34px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    color: $hoverColor;
+    @include titlemb;
     padding-bottom: 26px;
   }
   &__wrap {
@@ -163,10 +152,10 @@
     padding-bottom: 310px;
     background-image: none;
     &__subtitle {
-      font-size: 26px;
+      @include spantb;
     }
     &__title {
-      font-size: 48px;
+      @include titletb;
       padding-bottom: 100px;
     }
     &__wrap {
@@ -225,10 +214,10 @@
       background-image: url('../img/tradition/background@2x.png');
     }
     &__subtitle {
-      font-size: 30px;
+      @include spanpc;
     }
     &__title {
-      font-size: 58px;
+      @include titlepc;
       padding-bottom: 106px;
     }
     &__image {

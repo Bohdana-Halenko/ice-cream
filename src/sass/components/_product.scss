@@ -4,9 +4,7 @@
 }
 
 .product__subtitle {
-  font-family: 'Titan One', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  @include spanmb;
   text-transform: uppercase;
   text-align: center;
   display: block;
@@ -15,10 +13,7 @@
 }
 
 .product__title {
-  font-family: 'Titan One', sans-serif;
-  font-weight: 400;
-  font-size: 34px;
-  letter-spacing: 0.04em;
+  @include titlemb;
   text-transform: uppercase;
   text-align: center;
   color: #d41443;
@@ -148,10 +143,10 @@
     width: 220px;
   }
   .product__subtitle {
-    font-size: 26px;
+    @include spantb;
   }
   .product__title {
-    font-size: 48px;
+    @include titletb;
   }
   .product__item {
     display: flex;
@@ -188,7 +183,10 @@
     font-size: 16px;
   }
   .product__subtitle {
-    font-size: 30px;
+    @include spanpc;
+  }
+  .product__title{
+    @include titlepc;
   }
   .product__item {
     padding-top: 100px;
