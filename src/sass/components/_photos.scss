@@ -1,17 +1,17 @@
 .photo{
     position: relative;
-    bottom: 50px;
+    bottom: 60px;
     display: flex;
     justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .photo{
-    bottom: 105px;
+    bottom: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
   .photo{
-    bottom: 170px;
+    bottom: 157px;
     justify-content: baseline;
   }
 }
