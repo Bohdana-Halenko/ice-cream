@@ -34,12 +34,21 @@
   background-color: $hoverColor;
   border: none;
   color: $secondaryTextColor;
+  display: flex;
+}
+.card__first-button:hover{
+  color: $hoverColor;
+  background-color: $secondaryTextColor;
 }
 .card__svg-first {
-  margin-left: 12px;
+  margin-left: 5px;
   fill: $secondaryTextColor;
   transform: rotate(90deg);
-  margin-left: 10px;
+  transition: transform 450ms ease-in-out;
+} 
+.card__first-button:hover .card__svg-first{
+  transform: rotate(180deg);
+  fill: $hoverColor;
 }
 .card__second-button {
   margin-top: 10px;
@@ -53,12 +62,21 @@
   background-color: $secondaryTextColor;
   border: none;
   color: $hoverColor;
+  display: flex;
+}
+.card__second-button:hover{
+  background-color: $hoverColor;
+  color: $secondaryTextColor;
 }
 .card__svg-second {
-  margin-left: 13px;
+  margin-left: 5px;
   fill: $hoverColor;
   transform: rotate(90deg);
-  margin-left: 10px;
+  transition: transform 450ms ease-in-out;
+} 
+.card__second-button:hover .card__svg-second{
+  transform: rotate(180deg);
+  fill: $secondaryTextColor;
 }
 .card__city {
   margin-bottom: 3px;
@@ -152,9 +170,6 @@
 }
 .card:not(:last-child) {
   margin-bottom: 20px;
-}
-.card__second-button:hover {
-  background-color: $secondaryHoverColor;
 }
 .card__pinks {
   color: $firstCardColor;
