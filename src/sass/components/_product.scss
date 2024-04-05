@@ -58,11 +58,6 @@
   padding-top: 200px;
 }
 
-.product__img {
-  position: absolute;
-  bottom: 440px;
-}
-
 .product__text {
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
@@ -82,7 +77,50 @@
   border-radius: 24px;
   width: 280px;
 }
-.product__cream:hover{
+
+.product__coffee {
+  margin-top: 130px;
+  position: relative;
+  background-color: #f0d1a5;
+  border-radius: 24px;
+  width: 280px;
+}
+
+.product__milkshakes {
+  margin-top: 129px;
+  position: relative;
+  background-color: #c2e297;
+  border-radius: 24px;
+  width: 280px;
+}
+
+.product__link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__img {
+  display: block;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 440px;
+}
+
+.product__item {
+  margin: 0 auto;
+}
+
+.product__button {
+  padding-top: 30px;
+  padding-bottom: 41px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.product__button:hover{
   animation-name: chCream;
   animation-duration: 450ms;
 }
@@ -97,54 +135,6 @@
   100%{
     rotate: 360deg;
   }
-}
-
-.product__coffee {
-  margin-top: 130px;
-  position: relative;
-  background-color: #f0d1a5;
-  border-radius: 24px;
-  width: 280px;
-}
-.product__coffee:hover{
-  animation-name: chCream;
-  animation-duration: 450ms;
-}
-
-.product__milkshakes {
-  margin-top: 129px;
-  position: relative;
-  background-color: #c2e297;
-  border-radius: 24px;
-  width: 280px;
-}
-.product__milkshakes:hover{
-  animation-name: chCream;
-  animation-duration: 450ms;
-}
-
-.product__link {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.product__img {
-  display: block;
-  justify-content: space-between;
-}
-
-.product__item {
-  margin: 0 auto;
-}
-
-.product__button {
-  padding-top: 30px;
-  padding-bottom: 41px;
-  margin: 0 auto;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 767px) {
