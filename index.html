@@ -13,8 +13,8 @@
     />
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script type="module" crossorigin src="/ice-cream/assets/index-583dc36d.js"></script>
-    <link rel="stylesheet" href="/ice-cream/assets/index-b5585676.css">
+    <script type="module" crossorigin src="/ice-cream/assets/index-86fbb654.js"></script>
+    <link rel="stylesheet" href="/ice-cream/assets/index-38d2f743.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -413,14 +413,20 @@
     <div class="photo__wrap">
       <picture class="photo__image">
         <source
+          data-aos="flip-left"
           srcset="/ice-cream/assets/background@1x-0231697c.png 1x, /ice-cream/assets/background@2x-9c7de068.png 2x"
           type="image/png"
         />
         <source
+          data-aos="flip-left"
           srcset="/ice-cream/assets/background@1x-dbfd9326.webp 1x, /ice-cream/assets/background@2x-0988805b.webp 2x"
           type="image/webp"
         />
-        <img src="../img/photos/background@1x.png" alt="photos" />
+        <img
+          data-aos="flip-left"
+          src="../img/photos/background@1x.png"
+          alt="photos"
+        />
       </picture>
     </div>
   </div>
@@ -429,22 +435,33 @@
     <section class="reviews">
   <div class="container">
     <picture class="reviews__img">
-      <source srcset="/ice-cream/assets/smile-girl-4451b77f.png " type="image/png" />
-      <source srcset="data:image/webp;base64,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 " type="image/webp" />
-      <img src="../img/reviews/smile-girl.png" alt="smile-girl" />
+      <source
+        data-aos="fade-right"
+        data-aos-duration="750"
+        srcset="/ice-cream/assets/smile-girl-4451b77f.png "
+        type="image/png"
+      />
+      <source
+        data-aos="fade-right"
+        data-aos-duration="750"
+        srcset="data:image/webp;base64,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 "
+        type="image/webp"
+      />
+      <img
+        data-aos="fade-right"
+        data-aos-duration="750"
+        src="../img/reviews/smile-girl.png"
+        alt="smile-girl"
+      />
     </picture>
     <ul class="reviews__item">
-      <li class="reviews__list">
-        <picture class="tradition__cow">
+      <li class="reviews__list" data-aos="fade-up" data-aos-duration="750">
+        <picture class="reviews__background-img">
           <source
             srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAoCAYAAAC1mQk2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO5SURBVHgBvVnbUeMwFL02y3++mYGYCjZUQNIBVEC2goUKcCogWwGhA6iA0EG2gigww7f3kw9gz2FkcBLrYVvizGT8kKLjI11J914lYsFyuRwmSXKG3xCPmX5d4Hnx/v6+eHt7uzs8PJxLQHhw3oBz4WonMTW+s7NziYaG4obCL+/3+zfSAeA8SdP0Sr7EGAGR89fX14mtU7eErVarHJdLaQiQ3YLsAmRKGgKcU1x+S3NMMYIUWGwWJBsEubQQVYEC0aiJuMfHx3tPy2jEmZY3AUQRGczpHmaV+VTmSHUUVeXsVV9+jBg/BIVLCQf24lGdiZQA5xic1xIInHcHBwej8vljxKhYwoIdZRx93ZFdrWMNHHm0e14+p1wBxWMlaoFz3XYdhjE42VmlSaZY1s8kErhlSP0HtFkBfdAr204xhAOJBG0ea5NaP0fjBD7MMY1MwtHZtIiofECPUyCVyIhpESagM48pTElEaJ+vCiWRwc5M6VxKXGTVB+0hFBIR0DTgiM0kMp6fn/sbr2YSF70Uu/WdfIN5VAGv5I/ERS/VRL/kG6HNMZeISDXRHJepfCP0qEWb35/LPQLFC1w6BYsmvLy8/Nt8RwcZ4k4lwjRgpL22j0HcWJqZiBJ3rxcmL58myViKQap4Ah89F/eqWmxt0BA3YcihGzD+Eb+c9cSxwrH3bOUUhwXsVM9z5WhnnGXZCPfWjuAW9sNAxkZGcE0G3MVxX/p7BZ4X+/v7D2Vd1PmLd1YS8QA4Z7jMnp6ejiFyUOFUu7u78729vVWlTWVrC99z+8NBxo/qNMFJ0qS+7rQHaY+CbXT2FfHhPy3Fqjq6oUDPwlRWmmlnYSA5sRTnEhiMvm15EsSAM147CWN4YCHhihd8tGAhY/maf2vggldaSCdhjmRM3ibHaIPOfhmjb4xWXt63FqaTnJmhWHXNDNdBJ51MozWrzudWwnQO0tRz9ChGEhiujoSwSfVFY2HMB4o9sRrcBB0dSb/zwpgJ9oFHknMKEwwaknhkqNmRW3tlIv4EzP5cWaosIOpIAsLjsGKqnfctWD0PgukyjFLuIFDaUw8Crn5Y4a4deX2elU1MhYmDYKhNL7NUa3zC4uA80Zy9LpzWOaYd4MxSpQgpisBI0TI6iSKswhjCiDmUCC6KwOEhwxdTvOVtHc5V0ZAPKUUFD+31R9elKRqZvFMY8yGbES7FxhBVaZ9bhqq8ajyPvfYxni3Ll3mM6/aNkND5kNJSVAyT/wT2lEv8oh051QHn09e+x76b+A9RBvajZpVszAAAAABJRU5ErkJggg== 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABQCAYAAAD83pAbAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAd8SURBVHgB3Z1dUiJJEMfTno3wcdlXQ6E5wTInEE8w7AmWOcEwJ5j2BIMnGOYE7pxA5wTLnsCGB1+XfTRCdPOP2UaD0B9V2d1V/YswUGmR5J+VlfWVfUSW3N3ddfhhdHR0dM5fA/4eP4epS2L+WvFz8fPz8/zp6elnv9+/Jc9gOwdBEJyzDQO2ZUgvdnZSl8Swke3DY2LnnJQ5IkPYgNG7d+8+sQFDKg8EvF2v19/ZqL/IUeCMLNKEv/2Ttp2wKHDSW/660hKvtGBsxJiN+EJmBuwj5q+o1+t9J0dICfWJtluRMXBQFm5ma2dhwdiIkFvUN8MWVYSYHBAOkYPF+kp6DrkLwuYFt7iYDCgk2GKxgLehVal4Ww5WBpkirSqil1ZVB1O285LtXJX5o1zBWKwp1WdEwkqMmVINIHqwWNf87YDqpbRzZgrGYs3opcNtiksOkRFViIh1Q9WFwDzgnB+LJl8HBXNArA3cWc+63e5HqgAHxEpTyDmDfb9ksSJyQCzASc54uVx+I2Wkz3JFLPCF39Mk76I3gqUSDGeAaPy+vpIinPFWmQkageyURRtmXbMVEiVE/E31ZIOl4Vj/WSMREadUdQBF0Ke9P5SIbLUwjLPIUbEABuyYIiIL4JTkWATZAaH6Wqb83vAqGGYwKhwUa5FpTBHYKesaT9owkNmkN7wKdugCB0HYNhoXon9Af0h+MNnXn20EQ+sixzrgHCYS2kohrcsb9r3fQJ5wIoUvQYfHZ6U+fAjsQcjfAu93t5UFPhoCWLBxmVZmGkabZreVoYUNyVNYhDKRYUgestvK2Obgd/KXSZGMUa6pe2JXjXQrC2RZ31eKCuGzjWhlg8QxA/4hJI9hhysSFkPyG4w/P+Ab9GEheQwLNsq7ho39lTwnSQwD8p9Ogekq12c2ckkcsw2CoQWd51xSahneUTr39/c9CBaT56BTznqeZ7//oxbw+Pg4QJaovtmxAfJCYhts3DgmssSYPIedLsx6XjZxeh8WkdEHHC5+kP908gbQLYkkYSD73L33vuPj48zUnb2z0K4kl0EkSbLEWvb/Vcl6vQ6znudIgh3F3jvmRjA25orakfoeRHbY+u6YLy2sJcbk0gbHfB04izExtRhxzEvymFfBYAy2kVHL6fV6Uxz9IU/ZmpqS/d2tD42coGDrt4+hcfVmLhGnRqglMwOHwCZNT6PJW8EkNP5BnvVnvCobl7me7ZzxQ0QegVmpvbP14oEX5JFoDw8PpSd4uT9DNInIH1YHl1cS0TzpoFdlTzImQDSJKM73aZhey1wPg2jdbhctLaJqmGq8NspJkAVItnAAgaqJKDGv1w01XjtXsATxwj4pJSMohQAj+HU/S1iy9e6YLIFz8nuBjRHpCAebIjjC2dnZT1LIvjm7XRRecRaD3uN4p6FHrxKhwjC8ECM22E7Mas7Ei3OiK5iRmXAxvQjVx2sloVrmMm1A2J/bFFbBCYsP2BySqoCz9Q+Q1UgfiMowPw71M4vFAvvuIjJEzlNVMhRZLpfYrTTi/zE4sCVwU+EHdvLnMU874i5s579kuL8Ezg5HNxZsH9hzgMeTk5NFmb+TYi2mx2JX7Mm/UU1g3Q1LOchKyyY6LNgdme9SG6OGyS+kSFmhEmy2odW9ziUi1Z5RonYVHl3ZNRWSIZ7NC4ZkAEJucoTWCcEstouvXKpRlYXNUV/+fF4zTCcEMz3u5NOyf4G9kwdJwuHmdahh5PSnESyYT2tbYzIAFeDSFQUaF8z09CdaV7/mAmKmyPkuo5DIn88s/XOjgskh8SEZwIZ4s25n4ZS3u+O6RgUzHXshTGQNUF3CpnKBzLZs0ZhgNpULfOq7LCYE4n0ZcCOCSYkk0xIMU1/6LimyFpIBHEZH+37fiGBSTDKk8sSyhcF5JNEwckqE/NPT03/2PVe7YOJ1poPIyHShsk4kghiHwqyQX6tglqX9pj7MaijUYYyyQn5tgkmIMC15500olIp4IRlQpEx6LYLJ2tk1GSKFjJ0PhShozR/6iMxAKMzdele5YKmK1UYLd8zEh6xQ+mbj8khFnbJSwRSKIKPfuiLHEbFsKsUVdsrKBJMwaCOWF/2WglhRGadU3SKQgATDMgw2cneIstiWik/2aZT5G9UtAkCjADI2drosltKdJJBklK7HryqY0m0/JlXtgNIglfGGZI5xBFEJiYr3LolkY6mTaN00yGZbnnULU7zzkbNiYfZCbsVlOsZKM7aJIMaCKd9PbOqwWLifGOy0dUhgfX80m7RepVYwFumwx54cBbeNJJ1qcCoRxFgwKchiu0w/r+rORVooHa9VC/dWA2cZ2JoaM5dDg04jmZyNY6r2zVaCWZRRiH2Z0AWmJTEk3Kv2zSpp/XK5vCnRn3kxi7GLzN7cFL2+qhvVqcwlcpwv6kVeigXQZ7MIhXYaV3lXQRXBCiYg3oqVwI6JbDYzjFcpFlCbrc9JQLwXC+QlIFWLtfkfpMiBid9WiJVm38G8OsQCquthe+o4rdomFsA57/TPdYkF1BcwUwlIK8UC6QSkTrEqA4fMbe9V6TqYS9W+820R/gfYIvLWYW3PxwAAAABJRU5ErkJggg== 2x"
             type="image/png"
           />
-          <img
-            class="reviews__background-img"
-            src="../img/reviews/background@1x.png"
-            alt="background"
-          />
+          <img src="../img/reviews/background@1x.png" alt="background" />
         </picture>
         <p class="reviews__text">
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
@@ -453,7 +470,11 @@
         </p>
       </li>
     </ul>
-    <div class="reviews__wrap-second">
+    <div
+      data-aos="zoom-out-up"
+      data-aos-duration="750"
+      class="reviews__wrap-second"
+    >
       <div class="reviews__three-list">
         <div class="reviews__three-point"></div>
         <div class="reviews__three-point"></div>
@@ -484,7 +505,7 @@
     <section class="cards">
   <div class="container">
     <ul class="card__first-list">
-      <li class="card">
+      <li class="card" data-aos="zoom-in-right" data-aos-duration="500">
         <ul class="card__list">
           <li class="card__list-item"><span class="card__span">CAFE</span></li>
           <li class="card__list-item"><p class="card__citys">Chicago</p></li>
@@ -517,7 +538,7 @@
           </li>
         </ul>
       </li>
-      <li class="card">
+      <li class="card" data-aos="zoom-in-up" data-aos-duration="750">
         <ul class="card__list">
           <li class="card__list-item">
             <span class="card__title">FOOD TRUCK</span>
@@ -554,7 +575,7 @@
           </li>
         </ul>
       </li>
-      <li class="card">
+      <li class="card" data-aos="zoom-in-left" data-aos-duration="500">
         <ul class="card__list">
           <li class="card__list-item"><span class="card__span">CAFE</span></li>
           <li class="card__list-item"><p class="card__citys">New York</p></li>
@@ -592,16 +613,16 @@
       <li class="card__item">
         <button type="button" class="card__first-button">
           Our Locations
-          <svg class="card__svg-first" width="6" height="10">
-            <use href="/ice-cream/assets/symbol-defs-119682e8.svg#icon-arrow-icon"></use>
+          <svg class="card__svg-first" width="17px" height="17px">
+            <use href="/ice-cream/assets/symbol-defs-119682e8.svg#icon-arrrow"></use>
           </svg>
         </button>
       </li>
       <li class="card__item">
         <button type="button" class="card__second-button">
           Franchise
-          <svg class="card__svg-second" width="6" height="10">
-            <use href="/ice-cream/assets/symbol-defs-119682e8.svg#icon-arrow-icon"></use>
+          <svg class="card__svg-second" width="17px" height="17px">
+            <use href="/ice-cream/assets/symbol-defs-119682e8.svg#icon-arrrow"></use>
           </svg>
         </button>
       </li>
