@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
+  transition-duration: 450ms;
+}
+.reviews__img:hover{
+  transform: scale(1.2);
 }
 .reviews__text {
   font-weight: 500;
