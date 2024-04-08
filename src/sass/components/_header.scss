@@ -59,6 +59,7 @@
     font-weight: 700;
     font-size: 16px;
     padding: 11px 37px;
+    display: none;
 
     @media (max-width:480px) {
         display: none;
@@ -71,6 +72,10 @@
         display: flex;
         justify-content: center;
     }
+}
+.header__burger-button{
+    background-color: $firstCardColor;
+    border: none;
 }
 
 .header__button:hover,
@@ -145,7 +150,10 @@
     right: 28px;
     border: none;
     display: block;
-    background-color: $firstCardColor;
+    background-color: #e17992;
+}
+.mobile-menu__icon-close{
+    fill: $secondaryTextColor;
 }
 
 .mobile__button {
@@ -164,10 +172,8 @@
 .mobile__button-wraper {
     padding-bottom: 19px;
     border-bottom: 1px solid #e18298;
-    max-width: 480px;
     display: flex;
     justify-content: center;
-
 }
 
 .mobile__button:hover,
@@ -294,4 +300,3 @@
     font-family: "DM Sans", sans-serif;
     color: $secondaryTextColor;
 }
-.
