@@ -91,17 +91,20 @@
 }
 .tooltip .classic {
   position: absolute;
+  top: 30px;
   right: 0;
-  background-color: $firstCardColor;
-  color: $secondaryTextColor;          
+  background-color: $secondaryTextColor;
+  color: $secondaryTextColor; 
   padding: 10px;
   width: 170px;
   border-radius: 5px;
-  display: none;
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out, background-color 1000ms ease-in-out;
 }
 .tooltip:hover .classic {
   z-index: 999;
-  display: block;
+  opacity: 1;
+  background-color: $firstCardColor;
 }
 
 @media screen and (min-width: 768px) {
