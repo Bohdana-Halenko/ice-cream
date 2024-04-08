@@ -7,6 +7,14 @@
 .reviews__img:hover{
   transform: scale(1.2);
 }
+.reviews__list-img{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.reviews__two{
+  margin-left: 60px;
+}
 .reviews__text {
   font-weight: 500;
   font-size: 12px;
