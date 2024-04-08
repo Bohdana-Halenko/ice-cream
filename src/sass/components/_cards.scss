@@ -35,6 +35,7 @@
   border: none;
   color: $secondaryTextColor;
   display: flex;
+  transition-duration: 450ms;
 }
 .card__first-button:hover{
   color: $hoverColor;
@@ -63,6 +64,7 @@
   border: none;
   color: $hoverColor;
   display: flex;
+  transition-duration: 450ms;
 }
 .card__second-button:hover{
   background-color: $hoverColor;

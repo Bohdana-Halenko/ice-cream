@@ -85,6 +85,25 @@
   margin: 0 auto;
 }
 
+.tooltip { 
+  position: relative;
+  cursor: pointer;
+}
+.tooltip .classic {
+  position: absolute;
+  right: 0;
+  background-color: $firstCardColor;
+  color: $secondaryTextColor;          
+  padding: 10px;
+  width: 170px;
+  border-radius: 5px;
+  display: none;
+}
+.tooltip:hover .classic {
+  z-index: 999;
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .footer__first-wrap {
     display: flex;
