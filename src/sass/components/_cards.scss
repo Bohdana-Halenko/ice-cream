@@ -234,6 +234,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .cards{
+    background-image: url('../img/card/cardback.png');
+  }
   .card {
     width: 330px;
     padding: 51px 43px;
@@ -251,4 +254,5 @@
   .card__button {
     margin-top: 50px;
   }
+
 }
