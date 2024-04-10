@@ -194,6 +194,13 @@
 @media screen and (min-width: 768px) {
   .cards{
     height: 600px;
+
+  }
+  .card__text {
+    font-size: 14px;
+  }
+  .card__list-city{
+    font-size: 14px;
   }
   .card {
     padding: 50px 31px;
@@ -209,11 +216,26 @@
     left: 50px;
     top: -78px;
   }
+  .card__citys{
+    font-size: 14px;
+  }
   .card__button {
     display: flex;
     flex-direction: row;
     align-items: end;
     margin-top: 520px;
+  }
+  .card__city{
+    font-size: 14px;
+  }
+  .card__pink{
+    font-size: 14px;
+  }
+  .card__telephone{
+    font-size: 14px;
+  }
+  .card__email{
+    font-size: 14px;
   }
 
 }
@@ -224,6 +246,24 @@
     background-size: contain;
     background-position: center;
   }
+  .card__telephone{
+    font-size: 16px;
+  }
+  .card__list-city{
+    font-size: 16px;
+  }
+  .card__email{
+    font-size: 16px;
+  }
+  .card__pink{
+    font-size: 16px;
+  }
+  .card__city{
+    font-size: 16px;
+  }
+  .card__citys{
+    font-size: 16px;
+  }
   .card {
     width: 330px;
     padding: 51px 43px;
@@ -233,7 +273,7 @@
   }
   .card__text {
     width: 243px;
-    font-size: 12px;
+    font-size: 16px;
   }
   .card__list-pink {
     width: 243px;
