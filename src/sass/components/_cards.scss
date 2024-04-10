@@ -99,8 +99,6 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  // position: absolute;
-  // top: -84px;
 }
 .card__city {
   font-weight: 500;
@@ -176,13 +174,6 @@
 .card__pinks {
   color: $firstCardColor;
 }
-// .card__button {
-//   margin-top: 54px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-// }
 .card__first-button {
   margin-right: 14.5px;
   margin-bottom: 0px;
@@ -213,9 +204,6 @@
   background-color: $secondCardColor;
   color: $secondaryTextColor;
 }
-// .card__list {
-//   width: 220px;
-// }
 .card__title {
   margin-bottom: 30px;
   border-radius: 4px;
@@ -237,8 +225,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    // left: 50px;
-    // top: -78px;
   }
   .card__button {
     display: flex;
@@ -262,10 +248,6 @@
   .card__list-pink {
     width: 243px;
   }
-  // .card__first-list{
-  //   left: 80px;
-  //   top: -102px;
-  // }
   .card__button {
     margin-top: 50px;
   }
