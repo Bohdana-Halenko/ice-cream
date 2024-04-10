@@ -1,9 +1,11 @@
 <section class="tradition">
   <div class="container">
-    <span class="tradition__subtitle">tradition and love</span>
-    <h2 class="tradition__title">how it’s made?</h2>
+    <span data-aos="fade-left" data-aos-duration="1000" class="tradition__subtitle">tradition and love</span>
+    <h2 data-aos="fade-right" data-aos-duration="1000" class="tradition__title">how it’s made?</h2>
     <div class="tradition__wrap">
-      <div class="tradition__image">
+      <div class="tradition__image" data-aos="zoom-in-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000">
         <picture class="tradition__cow">
           <source
             srcset="
@@ -37,16 +39,53 @@
         <span class="tradition__third-text">
           Aliquam erat volutpat. Aenean accumsan.</span
         >
-        <div class="tradition__btn-wrap">
-          <button class="tradition__btn">
+        <div data-aos="fade-left" data-aos-duration="1000" class="tradition__btn-wrap">
+          <button class="tradition__btn tradition__tooltip" type="button" data-modal-open>
             Read more
-            <svg class="tradition__arrow" width="8px" height="12px">
-              <use href="./img/symbol-defs.svg#icon-arrow"></use>
+            <svg class="tradition__arrow" width="18px" height="24px">
+              <use href="./img/symbol-defs.svg#icon-arrrow"></use>
             </svg>
+            <span class="tradition__classic">All about us</span>
           </button>
         </div>
       </div>
     </div>
+    <div class="backdrop is-hidden" data-modal> 
+      <div class="modal" >
+        <div class="modal__btn">
+          <button data-modal-close  type="button" class="modal__close-button">
+               <svg class="modal__icon" width="25" height="25">
+                  <use href="./img/symbol-defs.svg#icon-close"></use>
+              </svg> 
+          </button>
+        </div>
+        <div class="modal__wrap">
+          <div class="modal__img">
+            <picture class="modal__cow">
+              <source
+                srcset="
+                  ./img/tradition/cow@1x.png 1x,
+                  ./img/tradition/cow@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./img/tradition/cow@1x.webp 1x,
+                  ./img/tradition/cow@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <img src="../img/tradition/cow@1x.png" alt="cow" />
+            </picture>
+           </div>
+           <div class="modal__text-wrap">
+           <h2 class="modal__title">how it’s made?</h2>
+           <p class="modal__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla. Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
+          </div>
+          </div>
+  </div>
+  </div>
     <ul class="tradition__list">
       <li class="tradition__item">
         <div class="tradition__icon-one">
@@ -56,7 +95,7 @@
             alt="cow-bucket"
           />
         </div>
-        <span id="count" class="tradition__number">0</span>
+        <span data-aos="flip-down" id="count" class="tradition__number">0</span>
         <p class="tradition__describe">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>
@@ -70,7 +109,7 @@
           />
         </div>
         <div class="tradition__num-wrap">
-          <span id="number" class="tradition__number">0</span>
+          <span data-aos="flip-down" id="number" class="tradition__number">0</span>
           <p class="tradition__number">KG</p>
         </div>
         <p class="tradition__describe">
@@ -81,7 +120,7 @@
         <div class="tradition__icon-three">
           <img class="tradition__icon" src="img/svg/candy.png" alt="candy" />
         </div>
-        <span id="numbers" class="tradition__number">0</span>
+        <span data-aos="flip-down" id="numbers" class="tradition__number">0</span>
         <p class="tradition__describe">
           Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
         </p>

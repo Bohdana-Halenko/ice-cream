@@ -17,7 +17,7 @@
   margin-bottom: 20px;
 }
 .card__button {
-  margin-top: 1490px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,10 +34,22 @@
   background-color: $hoverColor;
   border: none;
   color: $secondaryTextColor;
+  display: flex;
+  transition-duration: 450ms;
+}
+.card__first-button:hover{
+  color: $hoverColor;
+  background-color: $secondaryTextColor;
 }
 .card__svg-first {
-  margin-left: 12px;
+  margin-left: 5px;
   fill: $secondaryTextColor;
+  transform: rotate(90deg);
+  transition: transform 450ms ease-in-out;
+} 
+.card__first-button:hover .card__svg-first{
+  transform: rotate(180deg);
+  fill: $hoverColor;
 }
 .card__second-button {
   margin-top: 10px;
@@ -51,10 +63,22 @@
   background-color: $secondaryTextColor;
   border: none;
   color: $hoverColor;
+  display: flex;
+  transition-duration: 450ms;
+}
+.card__second-button:hover{
+  background-color: $hoverColor;
+  color: $secondaryTextColor;
 }
 .card__svg-second {
-  margin-left: 13px;
+  margin-left: 5px;
   fill: $hoverColor;
+  transform: rotate(90deg);
+  transition: transform 450ms ease-in-out;
+} 
+.card__second-button:hover .card__svg-second{
+  transform: rotate(180deg);
+  fill: $secondaryTextColor;
 }
 .card__city {
   margin-bottom: 3px;
@@ -75,8 +99,6 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  position: absolute;
-  top: -84px;
 }
 .card__city {
   font-weight: 500;
@@ -149,19 +171,9 @@
 .card:not(:last-child) {
   margin-bottom: 20px;
 }
-.card__second-button:hover {
-  background-color: $secondaryHoverColor;
-}
 .card__pinks {
   color: $firstCardColor;
 }
-// .card__button {
-//   margin-top: 54px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-// }
 .card__first-button {
   margin-right: 14.5px;
   margin-bottom: 0px;
@@ -192,9 +204,6 @@
   background-color: $secondCardColor;
   color: $secondaryTextColor;
 }
-// .card__list {
-//   width: 220px;
-// }
 .card__title {
   margin-bottom: 30px;
   border-radius: 4px;
@@ -202,8 +211,8 @@
   color: $secondaryTextColor;
 }
 @media screen and (min-width: 768px) {
-  .cards{
-    height: 600px;
+  .cards {
+    height: 500px;
   }
   .card {
     padding: 50px 31px;
@@ -212,22 +221,22 @@
   .card:not(:last-child) {
     margin-right: 20px;
   }
-    .card__first-list{
+  .card__first-list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    left: 50px;
-    top: -78px;
   }
   .card__button {
     display: flex;
     flex-direction: row;
     align-items: end;
-    margin-top: 520px;
+    margin-top: 50px;
   }
-
 }
 @media screen and (min-width: 1200px) {
+  .cards{
+    background-image: url('../img/card/cardback.png');
+  }
   .card {
     width: 330px;
     padding: 51px 43px;
@@ -242,11 +251,8 @@
   .card__list-pink {
     width: 243px;
   }
-  .card__first-list{
-    left: 80px;
-    top: -102px;
+  .card__button {
+    margin-top: 50px;
   }
-  .card__button{
-    margin-top: 450px;
-  }
+
 }

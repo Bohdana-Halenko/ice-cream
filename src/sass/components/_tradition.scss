@@ -12,24 +12,13 @@
     background-image: url('../img/tradition/background@2x.png');
   }
   &__subtitle {
-    font-family: 'Titan One', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ffa5ba;
+    @include spanmb;
     padding-bottom: 15px;
     display: flex;
     justify-content: center;
   }
   &__title {
-    font-family: 'Titan One', sans-serif;
-    font-weight: 400;
-    font-size: 34px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    color: $hoverColor;
+    @include titlemb;
     padding-bottom: 26px;
   }
   &__wrap {
@@ -91,15 +80,42 @@
     width: 176px;
     height: 44px;
     cursor: pointer;
-    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
-    &:hover {
-      background-color: $secondaryHoverColor;
-    }
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
   }
   &__arrow{
     fill: $hoverColor;
-     transform: rotate(90deg);
-    margin-left: 13px;
+    transform: rotate(90deg);
+    margin-left: 10px;
+    transition: transform 500ms ease-in-out, fill 500ms ease-in-out;
+  }
+  &__btn:hover, &__btn:focus{
+    background-color: $hoverColor;
+    color: $secondaryTextColor;
+    .tradition__arrow{
+      transform: rotate(180deg);
+      fill: $secondaryTextColor;
+    }
+  }
+  &__tooltip { 
+    position: relative;
+    cursor: pointer;
+  }
+  &__tooltip &__classic {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background-color: $secondaryTextColor;
+    color: $secondaryTextColor;          
+    padding: 10px;
+    width: 176px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out, background-color 1000ms ease-in-out;
+  }
+  &__tooltip:hover &__classic {
+    z-index: 999;
+   opacity: 1;
+   background-color: $hoverColor;
   }
   &__list {
     display: flex;
@@ -110,16 +126,28 @@
     width: 33px;
     height: 50px;
     margin-top: 38px;
+    transition: transform 500ms ease-in-out;
+    &:hover{
+      transform: scale(1.5);
+    }
   }
   &__icon-two {
     width: 50px;
     height: 50px;
     margin-top: 38px;
+    transition: transform 500ms ease-in-out;
+    &:hover{
+      transform: scale(1.5);
+    }
   }
   &__icon-three {
     width: 44px;
     height: 50px;
     margin-top: 38px;
+    transition: transform 500ms ease-in-out;
+    &:hover{
+      transform: scale(1.5);
+    }
   }
   &__number {
     font-family: 'Titan One', sans-serif;
@@ -145,10 +173,10 @@
     padding-bottom: 310px;
     background-image: none;
     &__subtitle {
-      font-size: 26px;
+      @include spantb;
     }
     &__title {
-      font-size: 48px;
+      @include titletb;
       padding-bottom: 100px;
     }
     &__wrap {
@@ -207,10 +235,10 @@
       background-image: url('../img/tradition/background@2x.png');
     }
     &__subtitle {
-      font-size: 30px;
+      @include spanpc;
     }
     &__title {
-      font-size: 58px;
+      @include titlepc;
       padding-bottom: 106px;
     }
     &__image {
@@ -238,4 +266,131 @@
 }
 .tradition__num-wrap {
   display: flex;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms,
+    visibility 250ms cubic-bezier(0.83, -0.08, 0.32, 1) 250ms;
+    opacity: 1;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 252px;
+  min-height: 772px;
+  background-color: $secondaryBackgroundColor;
+  border-radius: 24px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 500ms cubic-bezier(0.83, -0.08, 0.32, 1);
+  z-index: 99;
+  &__btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 33px;
+    margin-bottom: 38px;
+    margin-right: 33px;
+  }
+  &__close-button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  &__icon{
+    fill: $primaryTextColor;
+  }
+  &__img{
+    width: 198px;
+    height: 175px;
+    margin: 0 auto;
+  }
+  &__title{
+    font-family: 'Titan One', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $hoverColor;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  &__text{
+    font-weight: 500;
+font-size: 12px;
+line-height: 162%;
+color: $primaryTextColor;
+max-width: 162px;
+text-align: start;
+margin: 0 auto;
+  }
+}
+@media screen and (min-width:768px){
+.modal{
+  min-width: 730px;
+  min-height: 509px;
+  &__btn{
+    margin-bottom: 30px;
+  }
+  &__wrap{
+    display: flex;
+    align-items: center;
+  }
+  &__img{
+    width: 350px;
+    height: 350px;
+  }
+  &__text-wrap{
+    padding-right: 58px;
+    padding-bottom: 80px;
+  }
+  &__title{
+    font-size: 48px;
+    padding-bottom: 26px;
+    max-width: 240px;
+  }
+  &__text{
+    font-size: 14px;
+line-height: 176%;
+max-width: 242px;
+  }
+}  
+}
+@media screen and (min-width:1200px){
+  .modal{
+    min-width: 1100px;
+min-height: 609px;
+&__btn{
+  margin-bottom: 54px;
+}
+&__img{
+  width: 475px;
+height: 436px;
+}
+&__title{
+  font-size: 58px;
+  margin-bottom: 61px;
+  max-width: 534px;
+}
+&__text{
+  font-size: 16px;
+letter-spacing: 0.04em;
+max-width: 459px;
+}
+  }
 }

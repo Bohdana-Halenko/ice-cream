@@ -1,29 +1,17 @@
 .photo{
     position: relative;
-    bottom: 50px;
+    bottom: 60px;
     display: flex;
     justify-content: center;
 }
-.photo__wrap {
-  width: 364px;
-  height: 122px;
-}
 @media screen and (min-width: 768px) {
   .photo{
-    bottom: 105px;
-  }
-    .photo__wrap {
-    width: 768px;
-    height: 264px;
+    bottom: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
   .photo{
-    bottom: 170px;
+    bottom: 157px;
     justify-content: baseline;
-  }
-    .photo__wrap {
-    width: 1280px;
-    height: 430px;
   }
 }

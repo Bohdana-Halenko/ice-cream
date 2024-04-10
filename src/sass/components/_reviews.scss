@@ -2,6 +2,18 @@
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
+  transition-duration: 450ms;
+}
+.reviews__img:hover{
+  transform: scale(1.2);
+}
+.reviews__list-img{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.reviews__two{
+  margin-left: 60px;
 }
 .reviews__text {
   font-weight: 500;
@@ -21,6 +33,18 @@
 .three-point {
   margin-top: 50px;
   margin: 0 auto;
+}
+.reviews__three-point{
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #D31342;
+}
+.reviews__three-point:not(:last-child){
+  margin-right: 10px;
+}
+.reviews__three-list{
+  display: flex;
 }
 .reviews__background-img {
   position: relative;
