@@ -1,11 +1,16 @@
 .header {
   background-color: $firstCardColor;
-  background-image: url(../../img/header/ice-cream@1x.png);
+  background-image: url(../img/header/ice-cream@1x.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 346px;
   padding-top: 37px;
   padding-bottom: 160px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('../img/header/ice-cream@2x.png');
+    }
 }
 
 .header__desktop {
