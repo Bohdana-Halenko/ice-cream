@@ -55,15 +55,21 @@
       <h1 class="header__white-text">
         ice cream made with<span class="header__red-text">passion</span>
       </h1>
-      <button class="header__red-button">Products</button>
-      <button class="header__white-button">How it’s made?</button>
+      <div class="header__list-button">
+        <button class="header__red-button">Products</button>
+        <button class="header__white-button">How it’s made?</button>
+      </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="mobile-menu__icon-close" width="25" height="25">
-          <use href="./img/symbol-defs.svg#icon-close"></use>
-        </svg>
-      </button>
+      <div class="menu__close">
+        <button class="menu-toggle js-close-menu">
+          <svg class="mobile-menu__icon-close"
+               width="25"
+               height="25">
+            <use href="./img/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
       <div class="mobile__button-wraper">
         <button class="mobile__button">
           Buy now
@@ -121,9 +127,9 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <svg class="header__icon" width="26" height="26">
-          <use href="../img/svg/arrow-right.png"></use>
-        </svg>
+        <img class="header__button-arrow"
+             src="./img/svg/arrow-right.png"
+             alt="arrow-right" />
       </div>
       <div class="header__girl">
         <picture class="tasty">
