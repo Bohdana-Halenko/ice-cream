@@ -4,9 +4,7 @@
 }
 
 .product__subtitle {
-  font-family: 'Titan One', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  @include spanmb;
   text-transform: uppercase;
   text-align: center;
   display: block;
@@ -15,10 +13,7 @@
 }
 
 .product__title {
-  font-family: 'Titan One', sans-serif;
-  font-weight: 400;
-  font-size: 34px;
-  letter-spacing: 0.04em;
+  @include titlemb;
   text-transform: uppercase;
   text-align: center;
   color: #d41443;
@@ -56,11 +51,6 @@
   text-align: center;
   color: #fff;
   padding-top: 200px;
-}
-
-.product__img {
-  position: absolute;
-  bottom: 440px;
 }
 
 .product__text {
@@ -110,10 +100,15 @@
 .product__img {
   display: block;
   justify-content: space-between;
+  position: absolute;
+  bottom: 440px;
 }
 
 .product__item {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product__button {
@@ -121,6 +116,23 @@
   padding-bottom: 41px;
   margin: 0 auto;
   cursor: pointer;
+}
+
+.product__button:hover{
+  animation-name: chCream;
+  animation-duration: 800ms;
+}
+
+@keyframes chCream{
+  0%{
+    rotate: 0deg;
+  }
+  50%{
+    rotate: 180deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -134,14 +146,15 @@
     width: 220px;
   }
   .product__subtitle {
-    font-size: 26px;
+    @include spantb;
   }
   .product__title {
-    font-size: 48px;
+    @include titletb;
   }
   .product__item {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
   }
   .product__name {
@@ -174,7 +187,10 @@
     font-size: 16px;
   }
   .product__subtitle {
-    font-size: 30px;
+    @include spanpc;
+  }
+  .product__title{
+    @include titlepc;
   }
   .product__item {
     padding-top: 100px;

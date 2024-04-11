@@ -1,0 +1,30 @@
+@mixin titlemb {
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $hoverColor;
+}
+@mixin titletb {
+  font-size: 48px;
+}
+@mixin titlepc {
+  font-size: 58px;
+}
+
+@mixin spanmb {
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffa5ba;
+}
+@mixin spantb {
+  font-size: 26px;
+}
+@mixin spanpc {
+  font-size: 30px;
+}

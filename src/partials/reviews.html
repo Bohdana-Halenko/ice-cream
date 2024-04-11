@@ -1,17 +1,57 @@
 <section class="reviews">
   <div class="container">
-    <picture class="reviews__img">
-      <source srcset="./img/reviews/smile-girl.png" type="image/png" />
-      <source srcset="./img/reviews/smile-girl.webp" type="image/webp" />
-      <img src="../img/reviews/smile-girl.png" alt="smile-girl" />
-    </picture>
+    <ul class="reviews__list-img">
+      <li class="reviews__img-item">
+        <picture class="reviews__img">
+          <source
+            data-aos="fade-right"
+            data-aos-duration="750"
+            srcset="./img/reviews/smile-girl.png"
+            type="image/png"
+          />
+          <source
+            data-aos="fade-right"
+            data-aos-duration="750"
+            srcset="./img/reviews/smile-girl.webp"
+            type="image/webp"
+          />
+          <img
+            data-aos="fade-right"
+            data-aos-duration="750"
+            src="../img/reviews/smile-girl.png"
+            alt="smile-girl"
+          />
+        </picture>
+      </li>
+      <li class="reviews__img-item">
+        <picture class="reviews__img reviews__two">
+          <source
+            data-aos="fade-left"
+            data-aos-duration="750"
+            srcset="./img/reviews/smile@1x.png 1x, ./img/reviews/smile@2x.png"
+            type="image/png"
+          />
+          <img
+            data-aos="fade-left"
+            data-aos-duration="750"
+            src="../img/reviews/smile@1x.png"
+            alt="smile-girl"
+          />
+        </picture>
+      </li>
+    </ul>
     <ul class="reviews__item">
-      <li class="reviews__list">
-        <img
-          class="reviews__background-img"
-          src="../img/reviews/background.png"
-          alt="background"
-        />
+      <li class="reviews__list" data-aos="fade-up" data-aos-duration="750">
+        <picture class="reviews__background-img">
+          <source
+            srcset="
+              ./img/reviews/background@1x.png 1x,
+              ./img/reviews/background@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img src="../img/reviews/background@1x.png" alt="background" />
+        </picture>
         <p class="reviews__text">
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
           Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
@@ -19,12 +59,16 @@
         </p>
       </li>
     </ul>
-    <div class="reviews__wrap-second">
-      <img
-        class="three-point"
-        src="../img/svg/three-point.png"
-        alt="three-point"
-      />
+    <div
+      data-aos="zoom-out-up"
+      data-aos-duration="750"
+      class="reviews__wrap-second"
+    >
+      <div class="reviews__three-list">
+        <div class="reviews__three-point"></div>
+        <div class="reviews__three-point"></div>
+        <div class="reviews__three-point"></div>
+      </div>
       <p class="reviews__wrap-text">Emily, Los Angeles</p>
       <ul class="reviews__icon">
         <li class="reviews__icon-item">

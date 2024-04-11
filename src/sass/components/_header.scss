@@ -1,3 +1,329 @@
-.header{
-    background-color: pink;
+.header {
+    background-color: $firstCardColor;
+    background-image: url(../../img/header/ice-cream@1x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 346px;
+    display: flex;
+    padding-bottom: 160px;
+    justify-content: start;
+
 }
+
+.header__container {
+    padding: 0 15px;
+
+}
+
+
+.header__desktop {
+    display: none;
+}
+
+
+
+
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 760px;
+    min-width: 360px;
+
+
+}
+
+
+
+
+
+.header__button {
+    text-align: center;
+    border-radius: 22px;
+    border: none;
+    background-color: $secondaryTextColor;
+    color: $hoverColor;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 11px 37px;
+    display: none;
+
+}
+
+.header__arrow {
+    fill: $hoverColor;
+    transform: rotate(90deg);
+}
+
+.header__burger-button {
+    background-color: transparent;
+    border: none;
+}
+
+.header__button:hover,
+.header__button:focus {
+    background-color: $hoverColor;
+    color: $secondaryTextColor;
+}
+
+.header__white-text {
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $secondaryTextColor;
+    font-family: "Titan One", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 137px;
+    margin-bottom: 19px;
+    max-width: 218px;
+
+}
+
+.header__red-text {
+    color: $hoverColor;
+    letter-spacing: 0.04em;
+    font-size: 48px;
+    line-height: 96%;
+}
+
+.header__white-button {
+    background-color: $secondaryTextColor;
+    color: $hoverColor;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+    padding: 11px 12px;
+    margin-right: 8px;
+
+}
+
+.header__red-button {
+    background-color: $hoverColor ;
+    color: $secondaryTextColor;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+    padding: 11px 12px;
+}
+
+.menu-toggle {
+    border: none;
+    background-color: #e17992;
+}
+
+.menu__close {
+    display: flex;
+    justify-content: right;
+    padding-right: 28px;
+}
+
+.mobile-menu__icon-close {
+    fill: $secondaryTextColor;
+}
+
+.mobile__button {
+    text-align: center;
+    border-radius: 22px;
+    border: none;
+    background-color: $secondaryTextColor;
+    color: $hoverColor;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 11px 49px;
+    display: flex;
+    align-items: center;
+
+}
+
+.mobile__button-wraper {
+    padding-bottom: 19px;
+    border-bottom: 1px solid #e18298;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile__button:hover,
+.mobile__button:focus {
+    background-color: $hoverColor;
+    color: $secondaryTextColor;
+}
+
+.mobile__item {
+    margin-top: 23px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e18298;
+}
+
+.mobile__link {
+    color: $secondaryTextColor;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.mobile__link:hover,
+.mobile__link:focus {
+    color: $hoverColor;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    z-index: 1;
+    background-color: #e17992;
+    transform: translateX(100%);
+    transition-duration: 250ms;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-button-open {
+    position: relative;
+    right: 15px;
+    top: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: right;
+}
+
+
+.header__nav-link {
+    color: $secondaryTextColor;
+    padding-right: 35px;
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus {
+    color: $hoverColor;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.header__number-list {
+    display: block;
+    justify-content: right;
+}
+
+.header__circle {
+    border-radius: 100px;
+    background-color: $secondaryTextColor;
+    width: 30px;
+
+}
+
+.header__number {
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 46px;
+    color: $hoverColor;
+}
+
+.header__text {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    color: $secondaryTextColor;
+}
+
+.header__nav {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        background-position: 50%;
+        background-size: 538px;
+
+    }
+
+    .menu-button-open {
+        display: none;
+    }
+
+    .header__logo {
+        width: 200px;
+    }
+
+    .header__button {
+        margin-left: 30px;
+        width: 185px;
+        padding-top: 11px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__white-text {
+        font-size: 34px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .header__nav {
+        font-family: "DM Sans", sans-serif;
+        padding-left: 110px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .header__container {
+        padding: 0;
+    }
+    .header__desktop{
+        display: block;
+    }
+    .header__white-text{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .header__list-button{
+        margin-bottom: 19px;
+    }
+    .header__circle{
+        width: 16px;
+        height: 16px;
+        border-radius: 100%;
+        background-color: $secondaryTextColor;
+        z-index: -1;
+        position: absolute;
+        right: 0;
+    }
+    .header__number-list{
+        z-index: 2;
+        position: relative;
+        width: 55px;
+    }
+}
+
+@media screen and (min-width:1200px) {}
