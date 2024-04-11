@@ -19,6 +19,7 @@
   }
   &__title {
     @include titlemb;
+    text-align: center;
     padding-bottom: 26px;
   }
   &__wrap {

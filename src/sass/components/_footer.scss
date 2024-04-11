@@ -96,7 +96,7 @@
   background-color: $secondaryTextColor;
   color: $secondaryTextColor; 
   padding: 10px;
-  width: 170px;
+  width: 140px;
   border-radius: 5px;
   opacity: 0;
   transition: opacity 1000ms ease-in-out, background-color 1000ms ease-in-out;
@@ -112,6 +112,9 @@
     display: flex;
     align-items: start;
     justify-content: space-around;
+  }
+  .tooltip .classic {
+    width: 150px;
   }
   .footer__list {
     display: flex;
@@ -147,6 +150,9 @@
   }
   .footer__list {
     margin-bottom: 50px;
+  }
+  .tooltip .classic {
+    width: 170px;
   }
   .footer__rights {
     padding-top: 9px;

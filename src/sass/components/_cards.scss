@@ -259,10 +259,16 @@
 }
 @media screen and (min-width: 1200px) {
   .cards{
-    background-image: url('../img/card/cardback.png');
+    background-image: url('../img/cards/background@1x.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../img/cards/background@2x.png');
+    }
   }
   .card__telephone{
     font-size: 16px;

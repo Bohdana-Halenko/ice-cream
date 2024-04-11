@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="header__container container">
+  <div class="container">
     <div class="header__logo">
       <picture class="logo">
         <source
@@ -63,9 +63,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <div class="menu__close">
         <button class="menu-toggle js-close-menu">
-          <svg class="mobile-menu__icon-close"
-               width="25"
-               height="25">
+          <svg class="mobile-menu__icon-close" width="25" height="25">
             <use href="./img/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
@@ -97,39 +95,47 @@
       </ul>
     </div>
     <div class="header__desktop">
-      <ul class="header__number-list">
-        <li class="header__number-item">
-          <div class="header__circle"></div>
-          <h2 class="header__number">16</h2>
-          <p class="header__text">cafes</p>
-        </li>
-        <li class="header__number-item">
-          <div class="header__circle"></div>
-          <h2 class="header__number">23</h2>
-          <p class="header__text">food trucks</p>
-        </li>
-      </ul>
-      <div class="header__milk">
-        <picture class="milk">
-          <source
-            srcset="img/header/milk@1x.png 1x, img/header/milk@2x.png 2x"
-            type="image/png"
-          />
-          <source
-            srcset="img/header/milk@1x.webp 1x, img/header/milk@2x.webp 2x"
-            type="image/webp"
-          />
-          <img src="../img/header/milk@1x.png" alt="milk" />
-        </picture>
+      <div class="header__number-wrap">
+        <ul class="header__number-list">
+          <li class="header__number-item">
+            <div class="header__circle"></div>
+            <h2 class="header__number">16</h2>
+            <p class="header__text">cafes</p>
+          </li>
+          <li class="header__number-item">
+            <div class="header__circle"></div>
+            <h2 class="header__number">23</h2>
+            <p class="header__text">food trucks</p>
+          </li>
+        </ul>
       </div>
-      <div class="header__main-info">
-        <p class="header__main-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-        <img class="header__button-arrow"
-             src="./img/svg/arrow-right.png"
-             alt="arrow-right" />
+      <div class="header__mini-wrap">
+        <div class="header__milk">
+          <picture class="milk">
+            <source
+              srcset="img/header/milk@1x.png 1x, img/header/milk@2x.png 2x"
+              type="image/png"
+            />
+            <source
+              srcset="img/header/milk@1x.webp 1x, img/header/milk@2x.webp 2x"
+              type="image/webp"
+            />
+            <img src="../img/header/milk@1x.png" alt="milk" />
+          </picture>
+        </div>
+        <div class="header__main-info">
+          <p class="header__main-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <img
+            class="header__button-arrow"
+            width="18px"
+            height="18px"
+            src="./img/svg/arrow-right.png"
+            alt="arrow-right"
+          />
+        </div>
       </div>
       <div class="header__girl">
         <picture class="tasty">
