@@ -211,6 +211,15 @@
   color: $secondaryTextColor;
 }
 @media screen and (min-width: 768px) {
+  .cards{
+    height: 600px;
+  }
+  .card__text {
+    font-size: 14px;
+  }
+  .card__list-city{
+    font-size: 14px;
+  }
   .cards {
     height: 500px;
   }
@@ -226,16 +235,52 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
+  .card__citys{
+    font-size: 14px;
+  }
   .card__button {
     display: flex;
     flex-direction: row;
     align-items: end;
     margin-top: 50px;
   }
+  .card__city{
+    font-size: 14px;
+  }
+  .card__pink{
+    font-size: 14px;
+  }
+  .card__telephone{
+    font-size: 14px;
+  }
+  .card__email{
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .cards{
     background-image: url('../img/card/cardback.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .card__telephone{
+    font-size: 16px;
+  }
+  .card__list-city{
+    font-size: 16px;
+  }
+  .card__email{
+    font-size: 16px;
+  }
+  .card__pink{
+    font-size: 16px;
+  }
+  .card__city{
+    font-size: 16px;
+  }
+  .card__citys{
+    font-size: 16px;
   }
   .card {
     width: 330px;
@@ -246,7 +291,7 @@
   }
   .card__text {
     width: 243px;
-    font-size: 12px;
+    font-size: 16px;
   }
   .card__list-pink {
     width: 243px;
