@@ -14,8 +14,8 @@
     />
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script type="module" crossorigin src="/ice-cream/assets/index-e6f1213e.js"></script>
-    <link rel="stylesheet" href="/ice-cream/assets/index-4241753e.css">
+    <script type="module" crossorigin src="/ice-cream/assets/index-cafeb23b.js"></script>
+    <link rel="stylesheet" href="/ice-cream/assets/index-21bc61a7.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -76,15 +76,21 @@
       <h1 class="header__white-text">
         ice cream made with<span class="header__red-text">passion</span>
       </h1>
-      <button class="header__red-button">Products</button>
-      <button class="header__white-button">How it’s made?</button>
+      <div class="header__list-button">
+        <button class="header__red-button">Products</button>
+        <button class="header__white-button">How it’s made?</button>
+      </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="mobile-menu__icon-close" width="25" height="25">
-          <use href="/ice-cream/assets/symbol-defs-119682e8.svg#icon-close"></use>
-        </svg>
-      </button>
+      <div class="menu__close">
+        <button class="menu-toggle js-close-menu">
+          <svg class="mobile-menu__icon-close"
+               width="25"
+               height="25">
+            <use href="/ice-cream/assets/symbol-defs-119682e8.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
       <div class="mobile__button-wraper">
         <button class="mobile__button">
           Buy now
@@ -142,9 +148,9 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <svg class="header__icon" width="26" height="26">
-          <use href="../img/svg/arrow-right.png"></use>
-        </svg>
+        <img class="header__button-arrow"
+             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ+SURBVHgBzZnNaxNRFMXvDG0WqRGxgaIWW6kY97bQbetW3BRt+wcoCNKd7nRhBcWVCGL9wFUXgrgQxZ26dGFcVUorCm2IVmkUQS02Qq/nzAcNtCXJ5GZmfnB4M5mZ9w53Mu/jPkcioKouiiFoBBqEjkAHoK7glj/QZ+gDVIReQ28dx9mQdgJjvdA1qKTNUwqe7RVrUGk3dBta19ZZD+rqFgtQ0WloVe1hneMSFTzcAd3R9sM2Opo1l4WeaXywrWyj5hi5pxo/bLN+JHHTjCbHTD1z45o8k7WenBpz/OwXoLwkyw/oKDr1VZ64NReuSvLmyF5oOjzxIojoHUTxEeqUdPAPOowolsIInpP0mCP0Qk/iqD/wL0P2Y2RrlKG+cFaSNnOEnoZocFSsUJWVCzfl2/R9MWKEPfcxMaK6vCI/n7yUjV9r3nnPpTPSIoOMYEGMyPTvl/7HN8TNZaVy65FFJAvsYipqzFpxXucPndD3+VH9euWetkCFrzgnEVkYOLnjNf1b9UpGkv/NnstnJQI5V+LAcSQymvJXTINzaoihOTLHV7woRlSXvsjSqYteN5OfmrDoZhb5kbyDxsSATN8+2TN2XNzdXRbmSJFj8TAO3kg6GU7/ZCFIR8xK+pilt3DCyuh9gjKSDtjLD8Bg2euoeYDigaSHh4GnLYsmdjk2OZPofIcKMMhyc9EU/HBekmcqNLctmuzC/a7UAzdlNLnUR2MfqfrJoxcaH8+10eRRjclOjed1s43oS148PKHtS2BOigWoKK9+otEqBcy67NMs6ifRr0NlbZ5y8GxTY36kubhubkNwTc1lK7ch2PCu4Jbf4g/23IbgdO6VRNyG+A/OcXRboihbLAAAAABJRU5ErkJggg=="
+             alt="arrow-right" />
       </div>
       <div class="header__girl">
         <picture class="tasty">
