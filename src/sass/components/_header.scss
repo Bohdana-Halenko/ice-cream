@@ -4,14 +4,8 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: 346px;
-  display: flex;
   padding-top: 37px;
   padding-bottom: 160px;
-  justify-content: start;
-}
-
-.header__container {
-  padding: 0 15px;
 }
 
 .header__desktop {
@@ -20,7 +14,6 @@
 
 .header__logo {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -42,6 +35,7 @@
   fill: $hoverColor;
   transform: rotate(90deg);
   margin-left: 12px;
+  transition: transform 500ms ease-in-out, fill 500ms ease-in-out;
 }
 
 .header__burger-button {
@@ -54,6 +48,10 @@
 .header__button:focus {
   background-color: $hoverColor;
   color: $secondaryTextColor;
+  .header__arrow{
+  transform: rotate(180deg);
+  fill: $secondaryTextColor;
+}
 }
 
 .header__white-text {
@@ -88,6 +86,7 @@
   font-size: 8px;
   padding: 11px 12px;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .header__red-button {
@@ -100,6 +99,7 @@
   font-weight: 400;
   font-size: 8px;
   padding: 11px 12px;
+  cursor: pointer;
 }
 
 .menu-toggle {
@@ -111,12 +111,19 @@
   display: flex;
   justify-content: right;
   padding-right: 28px;
+  cursor: pointer;
+  
 }
 
 .mobile-menu__icon-close {
   fill: $secondaryTextColor;
+  transition: fill 500ms ease-in-out;
 }
-
+.menu__close:hover{
+  .mobile-menu__icon-close {
+      fill: $hoverColor;
+    }
+}
 .mobile__button {
   text-align: center;
   border-radius: 22px;
@@ -129,6 +136,7 @@
   padding: 11px 49px;
   display: flex;
   align-items: center;
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
 }
 
 .mobile__button-wraper {
@@ -142,6 +150,10 @@
 .mobile__button:focus {
   background-color: $hoverColor;
   color: $secondaryTextColor;
+  .header__arrow{
+    transform: rotate(180deg);
+    fill: $secondaryTextColor;
+  }
 }
 
 .mobile__item {
@@ -154,6 +166,7 @@
   color: $secondaryTextColor;
   font-size: 14px;
   font-weight: 700;
+  transition: color 500ms ease-in-out;
 }
 
 .mobile__link:hover,
@@ -180,23 +193,11 @@
   transform: translateX(0);
 }
 
-.menu-button-open {
-  position: relative;
-  right: 15px;
-  top: 25px;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  justify-content: right;
-}
 
 .header__nav-link {
   color: $secondaryTextColor;
   padding-right: 35px;
+  transition: color 500ms ease-in-out;
 }
 
 .header__nav-link:hover,
@@ -235,10 +236,6 @@
     padding-bottom: 28px;
   }
   
-  .header__burger-button {
-    padding-right: 120px;
-    margin-left: 291px;
-  }
 
   .header__main-text {
     font-weight: 400;
@@ -247,10 +244,6 @@
     color: $secondaryTextColor;
     width: 106px;
     margin-bottom: 7px;
-  }
-
-  .menu-button-open {
-    display: none;
   }
 
   .header__button {
@@ -262,12 +255,18 @@
     right: 34px;
     top: 37px;
     font-size: 16px;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
   }
 
   .header__white-text {
     font-size: 34px;
     padding-top: 15px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
 
   .header__nav {
@@ -277,16 +276,10 @@
     font-size: 16px;
   }
 
-  .header__container {
-    padding: 0;
-  }
   .header__desktop {
     display: block;
   }
-  .header__white-text {
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
+
   .header__list-button {
     margin-bottom: 19px;
   }
@@ -312,7 +305,7 @@
   .tasty{
     position: absolute;
     right: 34px;
-    bottom: 285px;
+    top: 318px;
   }
   .header__mini-wrap{
     display: flex;
@@ -323,6 +316,101 @@
     flex-direction: column;
     margin-bottom: -40px;
   }
+  .header__burger-button{
+    margin-right: 160px;
+  }
+  .menu-container{
+    width: 280px;
+    transform: translateX(-100%);
+    padding: 23px 34px;
+  }
+  .menu-toggle{
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .header__girl{
+    width: 168px;
+  }
+  
 }
 @media screen and (min-width: 1200px) {
+  .header__burger-button{
+    display: none;
+  }
+  .header__nav{
+    display: block;
+    padding-top: 13px;
+  }
+  .header__nav-list{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .header__wrap{
+    display: flex;
+  }
+  .header__button{
+    margin-right: 65px;
+  }
+  .header__number-wrap{
+    right: 97px;
+  }
+  .header__number{
+    font-size: 46px;
+  }
+  .header__number-item:first-child{
+    margin-bottom: 15px;
+    padding-top: 50px;
+  }
+  .header__text{
+    min-width: 74px;
+    font-size: 14px;
+  }
+  .header__girl{
+    width: 293px;
+  }
+  .header{
+    background-size: 500px;
+    background-position: bottom;
+  }
+  .header__main-text{
+    font-size: 14px;
+    line-height: 140%;
+    min-width: 200px;
+  }
+  .header__button-arrow{
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+  }
+  .header__main-info{
+    padding-left: 15px;
+  }
+  .header__red-button{
+    font-size: 14px;
+    margin-right: 17px;
+    padding: 15px 20px;
+    
+  }
+  .header__white-button{
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+  .header__logo{
+    margin-left: 26px;
+  }
+  .header__text-button{
+    margin-left: 95px;
+    margin-top: 84px;
+
+  }
+  .header__mini-wrap{
+    margin-left: 57px;
+  }
+  .header__white-text{
+    margin-bottom: 25px;
+    padding-bottom: 0;
+  }
+  .tasty{
+    top: 386px;
+  }
 }
