@@ -14,13 +14,13 @@
     />
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script type="module" crossorigin src="/ice-cream/assets/index-09439af8.js"></script>
-    <link rel="stylesheet" href="/ice-cream/assets/index-9b7528a8.css">
+    <script type="module" crossorigin src="/ice-cream/assets/index-a1de92ec.js"></script>
+    <link rel="stylesheet" href="/ice-cream/assets/index-7f800e60.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
     <header class="header">
-  <div class="header__container container">
+  <div class="container">
     <div class="header__logo">
       <picture class="logo">
         <source
@@ -84,9 +84,7 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <div class="menu__close">
         <button class="menu-toggle js-close-menu">
-          <svg class="mobile-menu__icon-close"
-               width="25"
-               height="25">
+          <svg class="mobile-menu__icon-close" width="25" height="25">
             <use href="/ice-cream/assets/symbol-defs-119682e8.svg#icon-close"></use>
           </svg>
         </button>
@@ -118,39 +116,47 @@
       </ul>
     </div>
     <div class="header__desktop">
-      <ul class="header__number-list">
-        <li class="header__number-item">
-          <div class="header__circle"></div>
-          <h2 class="header__number">16</h2>
-          <p class="header__text">cafes</p>
-        </li>
-        <li class="header__number-item">
-          <div class="header__circle"></div>
-          <h2 class="header__number">23</h2>
-          <p class="header__text">food trucks</p>
-        </li>
-      </ul>
-      <div class="header__milk">
-        <picture class="milk">
-          <source
-            srcset="/ice-cream/assets/milk@1x-caa05302.png 1x, /ice-cream/assets/milk@2x-ebde50fb.png 2x"
-            type="image/png"
-          />
-          <source
-            srcset="/ice-cream/assets/milk@1x-b13b8d6a.webp 1x, /ice-cream/assets/milk@2x-b4ee06c6.webp 2x"
-            type="image/webp"
-          />
-          <img src="../img/header/milk@1x.png" alt="milk" />
-        </picture>
+      <div class="header__number-wrap">
+        <ul class="header__number-list">
+          <li class="header__number-item">
+            <div class="header__circle"></div>
+            <h2 class="header__number">16</h2>
+            <p class="header__text">cafes</p>
+          </li>
+          <li class="header__number-item">
+            <div class="header__circle"></div>
+            <h2 class="header__number">23</h2>
+            <p class="header__text">food trucks</p>
+          </li>
+        </ul>
       </div>
-      <div class="header__main-info">
-        <p class="header__main-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-        <img class="header__button-arrow"
-             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ+SURBVHgBzZnNaxNRFMXvDG0WqRGxgaIWW6kY97bQbetW3BRt+wcoCNKd7nRhBcWVCGL9wFUXgrgQxZ26dGFcVUorCm2IVmkUQS02Qq/nzAcNtCXJ5GZmfnB4M5mZ9w53Mu/jPkcioKouiiFoBBqEjkAHoK7glj/QZ+gDVIReQ28dx9mQdgJjvdA1qKTNUwqe7RVrUGk3dBta19ZZD+rqFgtQ0WloVe1hneMSFTzcAd3R9sM2Opo1l4WeaXywrWyj5hi5pxo/bLN+JHHTjCbHTD1z45o8k7WenBpz/OwXoLwkyw/oKDr1VZ64NReuSvLmyF5oOjzxIojoHUTxEeqUdPAPOowolsIInpP0mCP0Qk/iqD/wL0P2Y2RrlKG+cFaSNnOEnoZocFSsUJWVCzfl2/R9MWKEPfcxMaK6vCI/n7yUjV9r3nnPpTPSIoOMYEGMyPTvl/7HN8TNZaVy65FFJAvsYipqzFpxXucPndD3+VH9euWetkCFrzgnEVkYOLnjNf1b9UpGkv/NnstnJQI5V+LAcSQymvJXTINzaoihOTLHV7woRlSXvsjSqYteN5OfmrDoZhb5kbyDxsSATN8+2TN2XNzdXRbmSJFj8TAO3kg6GU7/ZCFIR8xK+pilt3DCyuh9gjKSDtjLD8Bg2euoeYDigaSHh4GnLYsmdjk2OZPofIcKMMhyc9EU/HBekmcqNLctmuzC/a7UAzdlNLnUR2MfqfrJoxcaH8+10eRRjclOjed1s43oS148PKHtS2BOigWoKK9+otEqBcy67NMs6ifRr0NlbZ5y8GxTY36kubhubkNwTc1lK7ch2PCu4Jbf4g/23IbgdO6VRNyG+A/OcXRboihbLAAAAABJRU5ErkJggg=="
-             alt="arrow-right" />
+      <div class="header__mini-wrap">
+        <div class="header__milk">
+          <picture class="milk">
+            <source
+              srcset="/ice-cream/assets/milk@1x-caa05302.png 1x, /ice-cream/assets/milk@2x-ebde50fb.png 2x"
+              type="image/png"
+            />
+            <source
+              srcset="/ice-cream/assets/milk@1x-b13b8d6a.webp 1x, /ice-cream/assets/milk@2x-b4ee06c6.webp 2x"
+              type="image/webp"
+            />
+            <img src="../img/header/milk@1x.png" alt="milk" />
+          </picture>
+        </div>
+        <div class="header__main-info">
+          <p class="header__main-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <img
+            class="header__button-arrow"
+            width="18px"
+            height="18px"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ+SURBVHgBzZnNaxNRFMXvDG0WqRGxgaIWW6kY97bQbetW3BRt+wcoCNKd7nRhBcWVCGL9wFUXgrgQxZ26dGFcVUorCm2IVmkUQS02Qq/nzAcNtCXJ5GZmfnB4M5mZ9w53Mu/jPkcioKouiiFoBBqEjkAHoK7glj/QZ+gDVIReQ28dx9mQdgJjvdA1qKTNUwqe7RVrUGk3dBta19ZZD+rqFgtQ0WloVe1hneMSFTzcAd3R9sM2Opo1l4WeaXywrWyj5hi5pxo/bLN+JHHTjCbHTD1z45o8k7WenBpz/OwXoLwkyw/oKDr1VZ64NReuSvLmyF5oOjzxIojoHUTxEeqUdPAPOowolsIInpP0mCP0Qk/iqD/wL0P2Y2RrlKG+cFaSNnOEnoZocFSsUJWVCzfl2/R9MWKEPfcxMaK6vCI/n7yUjV9r3nnPpTPSIoOMYEGMyPTvl/7HN8TNZaVy65FFJAvsYipqzFpxXucPndD3+VH9euWetkCFrzgnEVkYOLnjNf1b9UpGkv/NnstnJQI5V+LAcSQymvJXTINzaoihOTLHV7woRlSXvsjSqYteN5OfmrDoZhb5kbyDxsSATN8+2TN2XNzdXRbmSJFj8TAO3kg6GU7/ZCFIR8xK+pilt3DCyuh9gjKSDtjLD8Bg2euoeYDigaSHh4GnLYsmdjk2OZPofIcKMMhyc9EU/HBekmcqNLctmuzC/a7UAzdlNLnUR2MfqfrJoxcaH8+10eRRjclOjed1s43oS148PKHtS2BOigWoKK9+otEqBcy67NMs6ifRr0NlbZ5y8GxTY36kubhubkNwTc1lK7ch2PCu4Jbf4g/23IbgdO6VRNyG+A/OcXRboihbLAAAAABJRU5ErkJggg=="
+            alt="arrow-right"
+          />
+        </div>
       </div>
       <div class="header__girl">
         <picture class="tasty">
