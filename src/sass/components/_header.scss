@@ -92,6 +92,11 @@
   padding: 11px 12px;
   margin-right: 8px;
   cursor: pointer;
+  transition-duration: 450ms;
+}
+.header__white-button:hover {
+  background-color: $hoverColor;
+  color: $secondaryTextColor;
 }
 
 .header__red-button {
@@ -105,6 +110,11 @@
   font-size: 8px;
   padding: 11px 12px;
   cursor: pointer;
+  transition-duration: 450ms;
+}
+.header__red-button:hover {
+  background-color: $secondaryTextColor;
+  color: $hoverColor;
 }
 
 .menu-toggle {
@@ -325,7 +335,7 @@
     margin-right: 160px;
   }
   .menu-container{
-    width: 280px;
+    width: 100%;
     transform: translateX(-100%);
     padding: 23px 34px;
   }
