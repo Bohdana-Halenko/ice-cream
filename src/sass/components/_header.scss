@@ -233,6 +233,13 @@
 .header__nav {
   display: none;
 }
+.tasty{
+  transition: transform 500ms ease-in-out;
+}
+.tasty:hover{
+  transform: scale(1.2);
+}
+
 
 @media screen and (min-width: 768px) {
   .header {
@@ -309,7 +316,7 @@
   }
   .tasty{
     position: absolute;
-    right: 34px;
+    right: 54px;
     top: 318px;
   }
   .header__mini-wrap{
@@ -336,7 +343,24 @@
   .header__girl{
     width: 168px;
   }
+    .header__button-arrow:hover {
+      animation-name: button-arrow;
+      animation-duration: 1500ms;
+    }
   
+    @keyframes button-arrow {
+      0% {
+        transform: rotate(0);
+      }
+  
+      50% {
+        transform: rotate(180deg);
+      }
+  
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 }
 @media screen and (min-width: 1200px) {
   .header__burger-button{
@@ -386,10 +410,26 @@
     width: 26px;
     height: 26px;
     margin-top: 20px;
+    cursor: pointer;
   }
-  .header__main-info{
-    padding-left: 15px;
-  }
+    .header__button-arrow:hover {
+      animation-name: button-arrow;
+      animation-duration: 1500ms;
+    }
+  
+    @keyframes button-arrow {
+      0% {
+        transform: rotate(0);
+      }
+  
+      50% {
+        transform: rotate(180deg);
+      }
+  
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   .header__red-button{
     font-size: 14px;
     margin-right: 17px;
@@ -417,5 +457,20 @@
   }
   .tasty{
     top: 386px;
+  }
+  .header__milk:hover{
+    animation-name: milk;
+    animation-duration: 1500ms;
+  }
+  @keyframes milk {
+    0%{
+      transform: rotate(0);
+    }
+    50%{
+      transform: rotate(-20deg);
+    }
+    100%{
+      transform: rotate(0);
+    }
   }
 }
