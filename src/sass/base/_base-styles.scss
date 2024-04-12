@@ -27,6 +27,9 @@ img{
     display: block;
     max-width: 100%;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     box-sizing: border-box;
     padding: 0;
