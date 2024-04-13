@@ -24,6 +24,7 @@
 }
 
 .header__button {
+  cursor: pointer;
   text-align: center;
   border-radius: 22px;
   border: none;
@@ -34,6 +35,7 @@
   font-size: 16px;
   padding: 11px 37px;
   display: none;
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
 }
 
 .header__arrow {
@@ -277,7 +279,6 @@
     right: 34px;
     top: 37px;
     font-size: 16px;
-    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
   }
 
   .header__white-text {
